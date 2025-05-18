@@ -197,15 +197,39 @@ nav {
 
 .hero-image img {
     max-width: 100%;
+    height: auto;
+    display: block;
     margin: 0 auto;
     transform: scale(1.15);
     transition: transform 0.5s ease;
     background-color: transparent;
-    background-color: transparent;
 }
 
-.hero-image img:hover {
-    transform: scale(1.18);
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0 10px 0;
+    }
+    .hero-image {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image img {
+        max-width: 95vw;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        min-height: 0;
+        object-fit: contain;
+        box-sizing: border-box;
+        margin: 0 auto;
+        transform: none;
+    }
 }
 
 /* Features Section */
