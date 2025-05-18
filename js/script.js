@@ -1,5 +1,17 @@
-// 设置默认语言
-document.documentElement.lang = localStorage.getItem('language') || 'en';
+// 设置默认语言，优先使用浏览器/设备语言
+(function() {
+    var saved = localStorage.getItem('language');
+    if (saved) {
+        document.documentElement.lang = saved;
+    } else {
+        var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        if (browserLang.startsWith('zh')) {
+            document.documentElement.lang = 'cn';
+        } else {
+            document.documentElement.lang = 'en';
+        }
+    }
+})();
 
 // 语言切换功能
 function switchLanguage(lang) {
