@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DietScanAi - Support</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="48x48 64x64 96x96 128x128 256x256">
+    <style>
+      /* 强制 favicon 显示为圆角矩形 */
+      link[rel~="icon"] {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      /* 支持页面特定样式 */
+      .support-section {
+        padding: 80px 0;
+      }
+
+      .support-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .support-card {
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .support-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .support-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+
+      .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-method i {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        width: 30px;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+      }
+
+      .faq-item:last-child {
+        border-bottom: none;
+      }
+
+      .faq-question {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+
+      .faq-answer {
+        color: var(--dark-gray);
+      }
+
+      .policy-links {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: var(--light-gray);
+        border-radius: 10px;
+      }
+
+      .policy-links p {
+        margin-bottom: 10px;
+      }
+
+      .policy-links a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="DietScanAi Logo" class="logo-img"></a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a></li>
+                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a></li>
+                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a></li>
+                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a></li>
+                        <li class="language-switch">
+                            <a href="javascript:void(0)" onclick="switchLanguage('en')" class="lang-switch lang-cn">English</a>
+                            <a href="javascript:void(0)" onclick="switchLanguage('cn')" class="lang-switch lang-en">中文</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <section class="support-section">
+        <div class="container">
+            <h2 class="section-title lang-en">Support</h2>
+            <h2 class="section-title lang-cn">支持</h2>
+            
+            <div class="support-container">
+                <div class="support-card">
+                    <h3 class="lang-en">Contact Us</h3>
+                    <h3 class="lang-cn">联系我们</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <p>support@dietscanai.app</p>
+                        </div>
+                        <p class="lang-en">Our support team is available Monday through Friday, 9:00 AM to 6:00 PM (GMT+8). We typically respond to inquiries within 24 hours.</p>
+                        <p class="lang-cn">我们的支持团队工作时间为周一至周五，上午9:00至下午6:00（GMT+8）。我们通常会在24小时内回复您的咨询。</p>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <h3 class="lang-en">Frequently Asked Questions</h3>
+                    <h3 class="lang-cn">常见问题解答</h3>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">How accurate is DietScanAi's food recognition?</p>
+                        <p class="faq-question lang-cn">DietScanAi的食物识别准确度如何？</p>
+                        <p class="faq-answer lang-en">DietScanAi uses advanced AI technology to identify foods with high accuracy. Our system can recognize thousands of common food items and dishes. For best results, take clear photos in good lighting and position the food centrally in the frame.</p>
+                        <p class="faq-answer lang-cn">DietScanAi使用先进的AI技术，能够高精度识别食物。我们的系统可以识别数千种常见食品和菜肴。为获得最佳效果，请在良好的光线下拍摄清晰的照片，并将食物放在画面中央。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">Can I track my daily nutrition intake over time?</p>
+                        <p class="faq-question lang-cn">我可以长期追踪每日营养摄入量吗？</p>
+                        <p class="faq-answer lang-en">Yes! DietScanAi stores your meal history, allowing you to view daily, weekly, and monthly nutrition trends. You can track calories, macronutrients (protein, carbs, fat), and glycemic index over time to help achieve your health goals.</p>
+                        <p class="faq-answer lang-cn">是的！DietScanAi会存储您的餐食历史记录，让您可以查看每日、每周和每月的营养趋势。您可以长期追踪卡路里、宏量营养素（蛋白质、碳水化合物、脂肪）和血糖指数，帮助您实现健康目标。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">Is my data secure and private?</p>
+                        <p class="faq-question lang-cn">我的数据安全和隐私是否有保障？</p>
+                        <p class="faq-answer lang-en">Absolutely. We take data privacy very seriously. Your food photos and nutrition data are stored securely and never shared with third parties without your consent. For more details, please review our Privacy Policy.</p>
+                        <p class="faq-answer lang-cn">当然。我们非常重视数据隐私。您的食物照片和营养数据被安全存储，未经您的同意，绝不会与第三方共享。有关更多详情，请查看我们的隐私政策。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">How do I get the most accurate results?</p>
+                        <p class="faq-question lang-cn">如何获得最准确的结果？</p>
+                        <p class="faq-answer lang-en">For best results: 1) Take photos in good lighting, 2) Position food clearly in the frame, 3) Try to separate different food items when possible, and 4) Take photos from above for flat dishes and from a 45-degree angle for dishes with height.</p>
+                        <p class="faq-answer lang-cn">为获得最佳结果：1）在良好的光线下拍照，2）将食物清晰地放在画面中，3）尽可能将不同的食物分开，4）对于平面菜肴从上方拍摄，对于有高度的菜肴从45度角拍摄。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">Can I manually add or edit food items?</p>
+                        <p class="faq-question lang-cn">我可以手动添加或编辑食物项目吗？</p>
+                        <p class="faq-answer lang-en">Yes, DietScanAi allows you to manually add food items or edit the AI's recognition results. This is useful for custom recipes, rare foods, or when you want to adjust portion sizes.</p>
+                        <p class="faq-answer lang-cn">是的，DietScanAi允许您手动添加食物项目或编辑AI的识别结果。这对于自定义食谱、罕见食物或当您想调整份量大小时非常有用。</p>
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <h3 class="lang-en">Troubleshooting</h3>
+                    <h3 class="lang-cn">故障排除</h3>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">The app is not recognizing my food correctly</p>
+                        <p class="faq-question lang-cn">应用无法正确识别我的食物</p>
+                        <p class="faq-answer lang-en">Try taking the photo in better lighting, make sure the food is clearly visible, and try different angles. You can also manually edit the recognition results if needed.</p>
+                        <p class="faq-answer lang-cn">尝试在更好的光线下拍照，确保食物清晰可见，并尝试不同的角度。如有需要，您也可以手动编辑识别结果。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question lang-en">The app crashes when I try to take a photo</p>
+                        <p class="faq-question lang-cn">当我尝试拍照时应用崩溃</p>
+                        <p class="faq-answer lang-en">Please ensure your iOS is updated to the latest version. Also, check if you've granted camera permissions to the app. If the problem persists, try restarting your device or reinstalling the app.</p>
+                        <p class="faq-answer lang-cn">请确保您的iOS已更新到最新版本。另外，检查您是否已授予应用相机权限。如果问题仍然存在，请尝试重启设备或重新安装应用。</p>
+                    </div>
+                </div>
+                
+                <div class="policy-links">
+                    <p class="lang-en">Privacy Policy</p>
+                    <p class="lang-cn">隐私政策</p>
+                    <p class="lang-en">Your privacy is important to us. To understand how we handle your data, please review our <a href="http://dietscanai.app/privacy-policy.html">Privacy Policy</a>.</p>
+                    <p class="lang-cn">您的隐私对我们很重要。要了解我们如何处理您的数据，请查看我们的<a href="http://dietscanai.app/privacy-policy.html">隐私政策</a>。</p>
+                    
+                    <p class="lang-en">Terms of Service</p>
+                    <p class="lang-cn">使用条款</p>
+                    <p class="lang-en">By using DietScanAi, you agree to our <a href="http://dietscanai.app/terms-of-service.html">Terms of Service</a>.</p>
+                    <p class="lang-cn">使用DietScanAi，即表示您同意我们的<a href="http://dietscanai.app/terms-of-service.html">使用条款</a>。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="DietScanAi Logo" class="footer-logo-img">
+                    <h2>DietScanAi</h2>
+                    <p class="lang-en">Track Your Nutrition With Just a Photo</p>
+                    <p class="lang-cn">只需一张照片，追踪您的营养摄入</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="lang-en">Quick Links</h3>
+                    <h3 class="lang-cn">快速链接</h3>
+                    <ul>
+                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a></li>
+                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a></li>
+                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a></li>
+                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="lang-en">Contact Us</h3>
+                    <h3 class="lang-cn">联系我们</h3>
+                    <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DietScanAi. All rights reserved. <a href="privacy-policy.html" class="lang-en">Privacy Policy</a><a href="privacy-policy.html" class="lang-cn">隐私政策</a> | <a href="terms-of-service.html" class="lang-en">Terms of Service</a><a href="terms-of-service.html" class="lang-cn">使用条款</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
