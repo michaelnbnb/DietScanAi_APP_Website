@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use - DietScanAi</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png" sizes="48x48 64x64 96x96 128x128 256x256">
     <style>
       .terms-container {
-        max-width: 700px;
+        width: 90%;
+        max-width: 800px;
         margin: 60px auto 40px auto;
-        background: var(--white);
-        border-radius: 16px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-        padding: 40px 24px 32px 24px;
+        padding: 20px;
+        box-sizing: border-box;
       }
       .terms-title {
         color: var(--primary-color);
@@ -33,11 +34,13 @@
       .terms-link {
         color: #fff;
         background: var(--primary-color);
-        padding: 4px 12px;
+        padding: 8px 16px;
         border-radius: 6px;
         font-weight: 600;
         text-decoration: none;
         transition: background 0.2s;
+        display: inline-block;
+        margin-top: 5px;
       }
       .terms-link:hover {
         background: var(--secondary-color);
@@ -47,6 +50,45 @@
         font-size: 0.98rem;
         text-align: right;
         margin-top: 30px;
+      }
+      
+      /* 响应式设计 */
+      @media (max-width: 768px) {
+        .terms-container {
+          width: 95%;
+          margin: 40px auto 30px auto;
+          padding: 15px;
+        }
+        .terms-title {
+          font-size: 1.8rem;
+        }
+        .terms-section h2 {
+          font-size: 1.2rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .terms-container {
+          width: 100%;
+          margin: 30px auto 20px auto;
+          padding: 10px 15px;
+        }
+        .terms-title {
+          font-size: 1.6rem;
+        }
+        .terms-section h2 {
+          font-size: 1.1rem;
+        }
+        .terms-section p {
+          font-size: 0.95rem;
+        }
+        .terms-link {
+          padding: 6px 12px;
+          font-size: 0.9rem;
+        }
+        .terms-date {
+          font-size: 0.85rem;
+        }
       }
     </style>
 </head>
@@ -60,12 +102,14 @@
                 <div class="nav-links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="index.html#how-it-works">How It Works</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="index.html#blog">Blog</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" class="active">Terms of Service</a></li>
+                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a></li>
+                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a></li>
+                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a></li>
+                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a></li>
+                        <li class="language-switch">
+                            <a href="javascript:void(0)" onclick="switchLanguage('en')" class="lang-switch lang-cn">English</a>
+                            <a href="javascript:void(0)" onclick="switchLanguage('cn')" class="lang-switch lang-en">中文</a>
+                        </li>
                     </ul>
                 </div>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -74,21 +118,29 @@
     </header>
     <main>
       <div class="terms-container">
-        <h1 class="terms-title">Terms of Use</h1>
+        <h1 class="terms-title lang-en">Terms of Use</h1>
+        <h1 class="terms-title lang-cn">使用条款</h1>
         <div class="terms-section">
-          <h2>DietScanAi Terms of Use</h2>
-          <p>DietScanAi uses the standard Apple Terms of Use (EULA).</p>
-          <p>This application is licensed to you by Apple or Apple’s subsidiaries in accordance with the standard Apple End User License Agreement (EULA) for applications available on the App Store.</p>
+          <h2 class="lang-en">DietScanAi Terms of Use</h2>
+          <h2 class="lang-cn">DietScanAi使用条款</h2>
+          <p class="lang-en">DietScanAi uses the standard Apple Terms of Use (EULA).</p>
+          <p class="lang-cn">DietScanAi使用苹果标准使用条款（EULA）。</p>
+          <p class="lang-en">This application is licensed to you by Apple or Apple's subsidiaries in accordance with the standard Apple End User License Agreement (EULA) for applications available on the App Store.</p>
+          <p class="lang-cn">本应用程序由苹果或苹果的子公司根据App Store上应用程序的标准苹果最终用户许可协议（EULA）授权给您。</p>
         </div>
         <div class="terms-section">
-          <h2>Apple Standard EULA</h2>
-          <p>For your convenience, you can view the standard Apple EULA at the link below:</p>
-          <p><a class="terms-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">View Apple's Standard EULA</a></p>
+          <h2 class="lang-en">Apple Standard EULA</h2>
+          <h2 class="lang-cn">苹果标准EULA</h2>
+          <p class="lang-en">For your convenience, you can view the standard Apple EULA at the link below:</p>
+          <p class="lang-cn">为了您的方便，您可以在下面的链接查看标准苹果EULA：</p>
+          <p><a class="terms-link lang-en" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">View Apple's Standard EULA</a><a class="terms-link lang-cn" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">查看苹果标准EULA</a></p>
         </div>
         <div class="terms-section">
-          <p>By using this application, you acknowledge that you have read and agree to the terms of the standard Apple EULA.</p>
+          <p class="lang-en">By using this application, you acknowledge that you have read and agree to the terms of the standard Apple EULA.</p>
+          <p class="lang-cn">使用本应用程序，即表示您确认已阅读并同意标准苹果EULA的条款。</p>
         </div>
-        <div class="terms-date">Last Updated: May 2025</div>
+        <div class="terms-date lang-en">Last Updated: May 2025</div>
+        <div class="terms-date lang-cn">最后更新：2025年5月</div>
       </div>
     </main>
     <footer>
