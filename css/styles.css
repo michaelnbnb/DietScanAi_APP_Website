@@ -481,6 +481,30 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Footer Logo Responsive Fix */
+.footer-logo-img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .footer-logo-img {
+        max-width: 56px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo-img {
+        max-width: 44px;
+        border-radius: 8px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero {
