@@ -27,4 +27,4 @@ app-screenshot.png图片，目前显示的图片尺寸太大，需要调整显�
 3:中文对应的图片为app-screenshot-cn.png（实际图片尺寸1290*901我已放在images文件里了）
 请执行调整
 
-将更新后的文件上传到GitHub仓库 https://github.com/michaelnbnb/DietScanAi_APP_Website 。
+将更新后的文件上传到GitHub仓库 https://github.com/michaelnbnb/DietScanAi_APP_Website 
