@@ -14,9 +14,17 @@
 - 所有图片应当是高质量、无版权问题的图片
 - 推荐使用与健康饮食、营养分析相关的图片
 - 图片尺寸建议：
-  - app-screenshot.png: 至少600x1200像素
+  - app-screenshot.png: 至少600x1200像素（1290*901）(4000*2796)
   - 博客图片: 至少800x450像素（16:9比例）
 
 ## 占位图片
 
 如果暂时没有合适的图片，网站会显示占位图片。但为了更好的用户体验，请尽快添加实际图片。
+
+app-screenshot.png图片，目前显示的图片尺寸太大，需要调整显示区域
+1:将其图片显示尺寸调整为1290*901
+2:英文对应的图片为app-screenshot-en.png（实际图片尺寸1290*901我已放在images文件里了）
+3:中文对应的图片为app-screenshot-cn.png（实际图片尺寸1290*901我已放在images文件里了）
+请执行调整
+
+将更新后的文件上传到GitHub仓库 https://github.com/michaelnbnb/DietScanAi_APP_Website 。
