@@ -56,8 +56,14 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images/app-screenshot-en.png" alt="DietScanAi App Screenshot" class="lang-en" style="width: 1290px; max-width: 100%; height: auto;">
-                    <img src="images/app-screenshot-cn.png" alt="DietScanAi App Screenshot" class="lang-cn" style="width: 1290px; max-width: 100%; height: auto;">
+                    <picture class="lang-en">
+                        <source srcset="images/app-screenshot-en.webp.png" type="image/webp">
+                        <img src="images/app-screenshot-en.png" alt="DietScanAi App Screenshot" style="width:1290px;max-width:100%;height:auto;" loading="lazy">
+                    </picture>
+                    <picture class="lang-cn">
+                        <source srcset="images/app-screenshot-cn.webp.png" type="image/webp">
+                        <img src="images/app-screenshot-cn.png" alt="DietScanAi App Screenshot" style="width:1290px;max-width:100%;height:auto;" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </div>
