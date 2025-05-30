@@ -189,14 +189,20 @@ nav {
 .hero-image {
     flex: 1.1;
     text-align: center;
-    display: flex;
-    flex-direction: column; /* 保证多图竖直排列 */
-    justify-content: flex-start;
-    align-items: center;
+    display: block; /* 改为block而不是flex */
     background-color: transparent;
     margin-top: 0 !important;
     padding-top: 0 !important;
-    gap: 0 !important;
+}
+
+/* 确保语言切换时只显示对应语言的图片 */
+.hero-image picture {
+    display: none; /* 默认隐藏所有图片 */
+}
+
+[lang="en"] .hero-image picture.lang-en,
+[lang="cn"] .hero-image picture.lang-cn {
+    display: block; /* 只显示当前语言的图片 */
 }
 
 .hero-image > *,
