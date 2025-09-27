@@ -56,12 +56,38 @@ img {
 }
 
 /* Language Switching */
-[lang="en"] .lang-cn {
+[lang="cn"] .lang-en,
+[lang="cn"] .lang-zh-TW,
+[lang="cn"] .lang-ms,
+[lang="cn"] .lang-ja,
+[lang="en"] .lang-cn,
+[lang="en"] .lang-zh-TW,
+[lang="en"] .lang-ms,
+[lang="en"] .lang-ja,
+[lang="zh-TW"] .lang-en,
+[lang="zh-TW"] .lang-cn,
+[lang="zh-TW"] .lang-ms,
+[lang="zh-TW"] .lang-ja,
+[lang="ms"] .lang-en,
+[lang="ms"] .lang-cn,
+[lang="ms"] .lang-zh-TW,
+[lang="ms"] .lang-ja,
+[lang="ja"] .lang-en,
+[lang="ja"] .lang-cn,
+[lang="ja"] .lang-zh-TW,
+[lang="ja"] .lang-ms {
     display: none;
 }
 
-[lang="cn"] .lang-en {
-    display: none;
+/* 设备类型特定样式 */
+[data-device="mobile"] .hero-image img {
+    width: 400px !important;
+    height: auto !important;
+}
+
+[data-device="tablet"] .hero-image img {
+    width: 600px !important;
+    height: auto !important;
 }
 
 /* Header & Navigation */
@@ -86,10 +112,9 @@ nav {
 }
 
 .logo-img {
-    width: 56px;
-    height: 56px;
-    margin-right: 12px;
-    border-radius: 12px; /* 保持圆角 */
+    max-width: 180px;
+    max-height: 50px;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -118,11 +143,51 @@ nav {
     color: var(--primary-color);
 }
 
-.language-switch a {
-    padding: 5px 10px;
-    border-radius: 4px;
+/* Language Dropdown */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.language-btn {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.language-btn i {
+    margin-left: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .fa-bars, .fa-times {
@@ -147,6 +212,26 @@ nav {
 .hero-text {
     flex: 0.9;
     padding-right: 1.5em; /* 减小右侧内边距，使文字与图片更靠近 */
+}
+
+.hero-image-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around; /* 让图片均匀分布 */
+    width: 100%;
+}
+
+.gallery-img {
+    width: 30%; /* 每张图片占据约三分之一的宽度 */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 0 5px; /* 添加一些间距 */
+}
+
+.gallery-img:hover {
+    transform: scale(1.05); /* 鼠标悬停时轻微放大 */
 }
 
 .hero-text h1 {
@@ -332,28 +417,48 @@ nav {
     background-color: var(--white);
 }
 
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
 .faq-item {
-    background-color: var(--light-gray);
-    padding: 25px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
 }
 
-.faq-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 0;
 }
 
-.faq-item h3 {
-    margin-bottom: 15px;
-    color: var(--primary-color);
-    font-size: 1.2rem;
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 10px;
+}
+
+.faq-answer p {
+    color: var(--dark-gray);
+    padding-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust as needed */
+    padding: 10px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
 }
 
 /* Blog Section */
@@ -368,7 +473,7 @@ nav {
     gap: 30px;
 }
 
-.blog-card {
+.blog-post {
     background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
@@ -376,11 +481,11 @@ nav {
     transition: transform 0.3s;
 }
 
-.blog-card:hover {
+.blog-post:hover {
     transform: translateY(-10px);
 }
 
-.blog-image img {
+.blog-post img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -488,14 +593,14 @@ footer {
 .footer-logo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     max-width: 220px;
     margin-bottom: 0;
 }
 
 .footer-logo-img {
-    max-width: 72px;
+    max-width: 120px;
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -506,7 +611,7 @@ footer {
 
 @media (max-width: 992px) {
     .footer-logo-img {
-        max-width: 56px;
+        max-width: 100px;
         border-radius: 10px;
     }
     .footer-logo {
@@ -525,8 +630,19 @@ footer {
         margin-bottom: 24px;
         max-width: 100%;
     }
+
+    .footer-app-name {
+        color: var(--primary-color);
+        margin-top: 8px;
+        margin-bottom: 4px;
+        font-size: 1.8rem;
+    }
+
+    .footer-logo p {
+        color: var(--light-gray);
+    }
     .footer-logo-img {
-        max-width: 44px;
+        max-width: 80px;
         border-radius: 8px;
         margin-bottom: 12px;
     }
