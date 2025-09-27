@@ -4,7 +4,7 @@
 
 ## 必需图片
 
-1. `app-screenshot.png` - DietScanAi应用的截图，显示在首页的英雄区域
+1. `app-screenshot.png` - Diet Scan AI应用的截图，显示在首页的英雄区域
 2. `blog-1.jpg` - 关于血糖指数的博客文章图片
 3. `blog-2.jpg` - 关于健身营养的博客文章图片
 4. `blog-3.jpg` - 关于体重管理的博客文章图片
@@ -27,4 +27,4 @@ app-screenshot.png图片，目前显示的图片尺寸太大，需要调整显�
 3:中文对应的图片为app-screenshot-cn.png（实际图片尺寸1290*901我已放在images文件里了）
 请执行调整
 
-将更新后的文件上传到GitHub仓库 https://github.com/michaelnbnb/DietScanAi_APP_Website 
+将更新后的文件上传到GitHub仓库 https://github.com/michaelnbnb/Diet_Scan_AI_APP_Website
