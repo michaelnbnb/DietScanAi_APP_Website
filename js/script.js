@@ -1,55 +1,127 @@
-// 设置默认语言，优先使用浏览器/设备语言
-(function() {
-    var saved = localStorage.getItem('language');
-    if (saved) {
-        document.documentElement.lang = saved;
-    } else {
-        var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-        if (browserLang.startsWith('zh')) {
-            document.documentElement.lang = 'cn';
-        } else {
-            document.documentElement.lang = 'en';
+document.addEventListener('DOMContentLoaded', () => {
+    // --- Global State ---
+    const translations = {};
+
+    // --- DOM Elements ---
+    const navLinks = document.getElementById('navLinks');
+    const menuOpenBtn = document.querySelector('.fa-bars');
+    const menuCloseBtn = document.querySelector('.fa-times');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const languageDropdown = document.getElementById('dropdown-content');
+    const langButton = document.getElementById('language-btn');
+
+    // --- Functions ---
+
+    // Mobile Menu
+    function showMenu() {
+        navLinks.classList.add('active');
+    }
+
+    function hideMenu() {
+        navLinks.classList.remove('active');
+    }
+
+    // Internationalization (i18n)
+    async function loadTranslations(lang) {
+        try {
+            const response = await fetch(`locales/${lang}.json?v=1.2`); // Cache-busting
+            if (!response.ok) {
+                console.error(`Could not load ${lang}.json. Status: ${response.status}`);
+                if (lang !== 'en') loadTranslations('en'); // Fallback to English
+                return;
+            }
+            translations[lang] = await response.json();
+            updateContent(lang);
+        } catch (error) {
+            console.error(`Error fetching or parsing ${lang}.json:`, error);
+            if (lang !== 'en') loadTranslations('en'); // Fallback to English
         }
     }
-})();
 
-// 语言切换功能
-function switchLanguage(lang) {
-    document.documentElement.lang = lang;
-    localStorage.setItem('language', lang);
-}
+    function updateContent(lang) {
+        if (!translations[lang]) return;
 
-// 移动端菜单显示
-function showMenu() {
-    document.getElementById('navLinks').classList.add('active');
-}
+        // Translate text content
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                element.innerHTML = translations[lang][key];
+            }
+        });
 
-// 移动端菜单隐藏
-function hideMenu() {
-    document.getElementById('navLinks').classList.remove('active');
-}
+        // Update page title
+        if (translations[lang].pageTitle) {
+            document.title = translations[lang].pageTitle;
+        }
 
-// 页面加载时检查并应用保存的语言设置
-document.addEventListener('DOMContentLoaded', function() {
-    const savedLanguage = localStorage.getItem('language');
-    if (savedLanguage) {
-        document.documentElement.lang = savedLanguage;
+        // Update language button text
+        const langKey = `lang${capitalize(lang)}`;
+        if (translations[lang][langKey]) {
+            langButton.querySelector('span').textContent = translations[lang][langKey];
+        } else if (lang === 'en') {
+            langButton.querySelector('span').textContent = 'English';
+        }
+
+        // Update images
+        updateImages(lang);
     }
     
-    // 平滑滚动到锚点
+    function updateImages(lang) {
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.style.display = 'none';
+        });
+        document.querySelectorAll(`.lang-${lang}`).forEach(img => {
+            img.style.display = 'block';
+        });
+    }
+
+    function capitalize(lang) {
+        const langMap = {
+            en: 'English',
+            cn: 'Chinese',
+            tw: 'TraditionalChinese',
+            ja: 'Japanese',
+            ms: 'Malay'
+        };
+        return langMap[lang] || lang;
+    }
+
+    function setLanguage(lang) {
+        localStorage.setItem('language', lang);
+        if (translations[lang]) {
+            updateContent(lang);
+        } else {
+            loadTranslations(lang);
+        }
+    }
+
+    // --- Event Listeners ---
+
+    // Menu Toggle
+    menuOpenBtn.addEventListener('click', showMenu);
+    menuCloseBtn.addEventListener('click', hideMenu);
+
+    // FAQ Accordion
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const currentlyActive = document.querySelector('.faq-item.active');
+            if (currentlyActive && currentlyActive !== item) {
+                currentlyActive.classList.remove('active');
+            }
+            item.classList.toggle('active');
+        });
+    });
+
+    // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             if (this.getAttribute('href') !== '#') {
                 e.preventDefault();
-                
-                // 如果在移动设备上，点击导航链接后关闭菜单
                 if (window.innerWidth <= 768) {
                     hideMenu();
                 }
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
+                const targetElement = document.querySelector(this.getAttribute('href'));
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 100,
@@ -59,14 +131,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
+    
+    // Language Switcher
+    languageDropdown.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            e.preventDefault();
+            const lang = e.target.getAttribute('data-lang');
+            setLanguage(lang);
+        }
+    });
 
-// 创建图片文件夹占位符提示
-const imgElements = document.querySelectorAll('img');
-imgElements.forEach(img => {
-    if (img.src.includes('images/') && !img.complete) {
-        img.addEventListener('error', function() {
-            this.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22300%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22300%22%20height%3D%22200%22%20fill%3D%22%23cccccc%22%3E%3C%2Frect%3E%3Ctext%20x%3D%22150%22%20y%3D%22100%22%20font-size%3D%2214%22%20text-anchor%3D%22middle%22%20alignment-baseline%3D%22middle%22%20fill%3D%22%23333333%22%3E请创建images文件夹并添加图片%3C%2Ftext%3E%3C%2Fsvg%3E';
-        });
+    // --- Initialization ---
+    function init() {
+        // Detect device
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
+
+        // Set initial language
+        const savedLang = localStorage.getItem('language') || 'cn';
+        setLanguage(savedLang);
     }
+
+    init();
 });
