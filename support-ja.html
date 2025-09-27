@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - ダイエットスキャンAI (Diet Scan AI)</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="48x48 64x64 96x96 128x128 256x256">
+    <style>
+      /* 强制 favicon 显示为圆角矩形 */
+      link[rel~="icon"] {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      /* サポートページ特定のスタイル */
+      .support-section {
+        padding: 80px 0;
+      }
+
+      .support-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .support-card {
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .support-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .support-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+
+      .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-method i {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        width: 30px;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+      }
+
+      .faq-item:last-child {
+        border-bottom: none;
+      }
+
+      .faq-question {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+
+      .faq-answer {
+        color: var(--dark-gray);
+      }
+
+      .policy-links {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: var(--light-gray);
+        border-radius: 10px;
+      }
+
+      .policy-links p {
+        margin-bottom: 10px;
+      }
+
+      .policy-links a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Diet Scan AI Logo" class="logo-img"></a>
+                    <h1>ダイエットスキャンAI (Diet Scan AI)</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#features">機能</a></li>
+                        <li><a href="index.html#how-it-works">仕組み</a></li>
+                        <li><a href="index.html#faq">よくある質問</a></li>
+                        <li><a href="index.html#blog">ブログ</a></li>
+                        <li><a href="support.html">サポート</a></li>
+                        <li class="language-switch">
+                            <div class="language-dropdown">
+                                <button class="language-btn" id="language-btn">
+                                    <span>日本語</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <a href="support.html">English</a>
+                                    <a href="support-cn.html">中文</a>
+                                    <a href="support-zh-TW.html">繁體中文</a>
+                                    <a href="support-ms.html">Bahasa Melayu</a>
+                                    <a href="support-ja.html">日本語</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <section class="support-section">
+        <div class="container">
+            <h2 class="section-title">サポート</h2>
+            
+            <div class="support-container">
+                <div class="support-card">
+                    <h3>お問い合わせ</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <p>support@dietscanai.app</p>
+                        </div>
+                        <p>サポートチームは月曜日から金曜日の午前9時から午後6時まで（GMT+8）対応しております。お問い合わせには通常24時間以内に返信いたします。</p>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <h3>よくある質問</h3>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Diet Scan AIの食品認識の精度はどのくらいですか？</p>
+                        <p class="faq-answer">Diet Scan AIは高度なAI技術を使用して、高い精度で食品を識別します。当社のシステムは何千もの一般的な食品や料理を認識できます。最良の結果を得るために、明るい場所で鮮明な写真を撮り、食品をフレームの中央に配置してください。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">日々の栄養摂取量を長期的に追跡できますか？</p>
+                        <p class="faq-answer">はい！Diet Scan AIは食事履歴を保存し、日、週、月の栄養トレンドを表示できます。カロリー、主要栄養素（タンパク質、炭水化物、脂質）、グリセミックインデックスを長期的に追跡し、健康目標の達成をサポートします。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">私のデータは安全でプライベートですか？</p>
+                        <p class="faq-answer">もちろんです。私たちはデータプライバシーを非常に重視しています。あなたの食品写真と栄養データは安全に保管され、あなたの同意なしに第三者と共有されることはありません。詳細については、プライバシーポリシーをご確認ください。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">最も正確な結果を得るにはどうすればよいですか？</p>
+                        <p class="faq-answer">最良の結果を得るために：1）明るい場所で写真を撮る、2）食品をフレーム内に明確に配置する、3）可能であれば異なる食品を分ける、4）平らな料理は上から、高さのある料理は45度の角度から写真を撮る。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">食品を手動で追加または編集できますか？</p>
+                        <p class="faq-answer">はい、Diet Scan AIでは手動で食品を追加したり、AIの認識結果を編集したりすることができます。これは、カスタムレシピ、珍しい食品、または分量を調整したい場合に便利です。</p>
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <h3>トラブルシューティング</h3>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">アプリが食品を正しく認識しません</p>
+                        <p class="faq-answer">より明るい場所で写真を撮り直し、食品がはっきりと見えるようにし、異なる角度から試してみてください。必要に応じて、認識結果を手動で編集することもできます。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">写真を撮ろうとするとアプリがクラッシュします</p>
+                        <p class="faq-answer">お使いのiOSが最新バージョンにアップデートされていることを確認してください。また、アプリにカメラのアクセス許可を与えているか確認してください。問題が解決しない場合は、デバイスを再起動するか、アプリを再インストールしてみてください。</p>
+                    </div>
+                </div>
+                
+                <div class="policy-links">
+                    <p>プライバシーポリシー</p>
+                    <p>お客様のプライバシーは当社にとって重要です。当社がお客様のデータをどのように取り扱うかについては、<a href="http://dietscanai.app/privacy-policy.html">プライバシーポリシー</a>をご覧ください。</p>
+                    
+                    <p>利用規約</p>
+                    <p>Diet Scan AIを利用することにより、お客様は当社の<a href="http://dietscanai.app/terms-of-service.html">利用規約</a>に同意したものとみなされます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Diet Scan AI Logo" class="footer-logo-img">
+                    <h2>ダイエットスキャンAI (Diet Scan AI)</h2>
+                    <p>写真一枚で、あなたの栄養を追跡</p>
+                </div>
+                <div class="footer-links">
+                    <h3>クイックリンク</h3>
+                    <ul>
+                        <li><a href="index.html#features">機能</a></li>
+                        <li><a href="index.html#how-it-works">仕組み</a></li>
+                        <li><a href="index.html#faq">よくある質問</a></li>
+                        <li><a href="index.html#blog">ブログ</a></li>
+                        <li><a href="support.html">サポート</a></li>
+                        <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms-of-service.html">利用規約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ダイエットスキャンAI (Diet Scan AI). 無断複写・転載を禁じます. <a href="privacy-policy.html">プライバシーポリシー</a> | <a href="terms-of-service.html">利用規約</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

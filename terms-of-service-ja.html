@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用規約 - DietScan AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="48x48 64x64 96x96 128x128 256x256">
+    <style>
+      .terms-container {
+        width: 90%;
+        max-width: 800px;
+        margin: 60px auto 40px auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .terms-title {
+        color: var(--primary-color);
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+      .terms-section {
+        margin-bottom: 28px;
+      }
+      .terms-section h2 {
+        color: var(--secondary-color);
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+      .terms-link {
+        color: #fff;
+        background: var(--primary-color);
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s;
+        display: inline-block;
+        margin-top: 5px;
+      }
+      .terms-link:hover {
+        background: var(--secondary-color);
+      }
+      .terms-date {
+        color: var(--dark-gray);
+        font-size: 0.98rem;
+        text-align: right;
+        margin-top: 30px;
+      }
+      
+      /* 响应式设计 */
+      @media (max-width: 768px) {
+        .terms-container {
+          width: 95%;
+          margin: 40px auto 30px auto;
+          padding: 15px;
+        }
+        .terms-title {
+          font-size: 1.8rem;
+        }
+        .terms-section h2 {
+          font-size: 1.2rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .terms-container {
+          width: 100%;
+          margin: 30px auto 20px auto;
+          padding: 10px 15px;
+        }
+        .terms-title {
+          font-size: 1.6rem;
+        }
+        .terms-section h2 {
+          font-size: 1.1rem;
+        }
+        .terms-section p {
+          font-size: 0.95rem;
+        }
+        .terms-link {
+          padding: 6px 12px;
+          font-size: 0.9rem;
+        }
+        .terms-date {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="DietScan AI Logo" class="logo-img"></a>
+                    <h1>DietScan AI</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#features">特徴</a></li>
+                        <li><a href="index.html#how-it-works">仕組み</a></li>
+                        <li><a href="index.html#faq">よくある質問</a></li>
+                        <li><a href="index.html#blog">ブログ</a></li>
+                        <li><a href="support.html">サポート</a></li>
+                        <li class="language-switch">
+                            <div class="language-dropdown">
+                                <button class="language-btn" id="language-btn">
+                                    <span>日本語</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <a href="terms-of-service.html">English</a>
+                                    <a href="terms-of-service-cn.html">中文</a>
+                                    <a href="terms-of-service-zh-TW.html">繁體中文</a>
+                                    <a href="terms-of-service-ms.html">Bahasa Melayu</a>
+                                    <a href="terms-of-service-ja.html">日本語</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <div class="terms-container">
+        <h1 class="terms-title">利用規約</h1>
+        <div class="terms-section">
+          <h2>DietScan AI 利用規約</h2>
+          <p>DietScan AIへようこそ。本利用規約は、当社のアプリケーションの利用に関する規則と規制を概説するものです。</p>
+          <p>このアプリケーションは、App Storeで入手可能なアプリケーションに関する標準のAppleエンドユーザーライセンス契約（EULA）に従い、AppleまたはAppleの子会社からお客様にライセンス供与されます。</p>
+        </div>
+        <div class="terms-section">
+          <h2>Apple標準EULA</h2>
+          <p>便宜上、以下のリンクから標準のApple EULAをご覧いただけます。</p>
+          <p><a class="terms-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Appleの標準EULAを表示</a></p>
+        </div>
+        <div class="terms-section">
+          <p>このアプリケーションを使用することにより、お客様は標準のApple EULAの条項を読み、同意したものとみなされます。</p>
+        </div>
+        <div class="terms-date">最終更新日：2025年5月</div>
+      </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="DietScan AI Logo" class="footer-logo-img">
+                    <h2>DietScan AI</h2>
+                    <p>写真1枚で栄養を記録</p>
+                </div>
+                <div class="footer-links">
+                    <h3>クイックリンク</h3>
+                    <ul>
+                        <li><a href="index.html#features">特徴</a></li>
+                        <li><a href="index.html#how-it-works">仕組み</a></li>
+                        <li><a href="index.html#faq">よくある質問</a></li>
+                        <li><a href="index.html#blog">ブログ</a></li>
+                        <li><a href="support.html">サポート</a></li>
+                        <li><a href="privacy-policy-ja.html">プライバシーポリシー</a></li>
+                        <li><a href="terms-of-service-ja.html">利用規約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Diet Scan AI. 全著作権所有。 <a href="privacy-policy-ja.html">プライバシーポリシー</a> | <a href="terms-of-service-ja.html">利用規約</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

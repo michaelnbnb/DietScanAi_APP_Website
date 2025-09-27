@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Scan AI Blog - AI Nutrition Insights & Research</title>
+    <meta name="description" content="Explore the latest insights on AI-powered nutrition tracking, computer vision in food analysis, and the future of smart health technology with Diet Scan AI.">
+    <meta name="keywords" content="AI nutrition blog, computer vision food analysis, machine learning health, smart nutrition research, AI diet technology">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dietscannai.app/blog.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .blog-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .blog-excerpt {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .category-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        .ai-tag { background: #9b59b6; }
+        .tech-tag { background: #3498db; }
+        .health-tag { background: #2ecc71; }
+        .research-tag { background: #e67e22; }
+        .featured {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .featured .blog-image {
+            height: 300px;
+        }
+        .featured .blog-content {
+            padding: 40px;
+        }
+        @media (max-width: 768px) {
+            .featured {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diet Scan AI Blog</h1>
+            <p class="subtitle">Insights on AI-Powered Nutrition & Health Technology</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="blog-grid">
+            <!-- Featured Article -->
+            <article class="blog-card featured">
+                <div class="blog-image">🤖</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">AI Technology</span>
+                    <h2 class="blog-title">How Computer Vision Revolutionizes Food Recognition</h2>
+                    <div class="blog-meta">Published: September 2025 | 8 min read</div>
+                    <p class="blog-excerpt">
+                        Discover how Diet Scan AI uses advanced computer vision algorithms to identify food items with 95%+ accuracy. Learn about the deep learning models, training datasets, and real-world applications that make instant nutrition analysis possible.
+                    </p>
+                    <a href="#" class="read-more">Read Full Article →</a>
+                </div>
+            </article>
+
+            <!-- Regular Articles -->
+            <article class="blog-card">
+                <div class="blog-image">📊</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">Technology</span>
+                    <h3 class="blog-title">The Science Behind AI Nutrition Tracking</h3>
+                    <div class="blog-meta">September 2025 | 5 min read</div>
+                    <p class="blog-excerpt">
+                        Explore the machine learning algorithms that power accurate calorie counting and macro analysis from simple food photos.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🌍</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">Global Health</span>
+                    <h3 class="blog-title">Multi-Language Nutrition: Breaking Down Barriers</h3>
+                    <div class="blog-meta">September 2025 | 6 min read</div>
+                    <p class="blog-excerpt">
+                        How Diet Scan AI supports 5 languages to make nutrition tracking accessible worldwide, from Asian cuisines to Western diets.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🩺</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">Health Research</span>
+                    <h3 class="blog-title">Glycemic Index Monitoring with AI</h3>
+                    <div class="blog-meta">September 2025 | 7 min read</div>
+                    <p class="blog-excerpt">
+                        Learn how AI-powered glycemic index tracking helps diabetics and health-conscious individuals manage blood sugar levels effectively.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🔬</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">Research</span>
+                    <h3 class="blog-title">Training AI on Global Food Databases</h3>
+                    <div class="blog-meta">September 2025 | 9 min read</div>
+                    <p class="blog-excerpt">
+                        Behind the scenes: How we trained our AI models on 100,000+ food items from diverse cuisines to achieve universal food recognition.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">📱</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">Mobile AI</span>
+                    <h3 class="blog-title">Edge Computing in Nutrition Apps</h3>
+                    <div class="blog-meta">September 2025 | 4 min read</div>
+                    <p class="blog-excerpt">
+                        Why Diet Scan AI processes food analysis locally on your device for privacy, speed, and offline functionality.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🎯</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">Personalization</span>
+                    <h3 class="blog-title">Personalized Nutrition with Machine Learning</h3>
+                    <div class="blog-meta">September 2025 | 6 min read</div>
+                    <p class="blog-excerpt">
+                        How AI learns from your eating patterns to provide personalized health insights and nutrition recommendations.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🚀</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">Future Tech</span>
+                    <h3 class="blog-title">The Future of AI in Preventive Healthcare</h3>
+                    <div class="blog-meta">September 2025 | 8 min read</div>
+                    <p class="blog-excerpt">
+                        Exploring how AI nutrition tracking is evolving toward predictive health analytics and preventive care solutions.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Diet Scan AI Blog",
+        "description": "Insights on AI-powered nutrition tracking, computer vision in food analysis, and smart health technology",
+        "url": "https://dietscannai.app/blog.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Diet Scan AI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://dietscannai.app/images/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "How Computer Vision Revolutionizes Food Recognition",
+                "description": "Discover how Diet Scan AI uses advanced computer vision algorithms to identify food items with 95%+ accuracy",
+                "datePublished": "2025-09-01",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Diet Scan AI Research Team"
+                },
+                "keywords": "computer vision, food recognition, AI, machine learning, nutrition tracking"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Diet Scan AI - Wawasan Teknologi Pemantauan Nutrisi AI</title>
+    <meta name="description" content="Jelajahi wawasan terkini tentang pemantauan nutrisi bertenaga AI, teknologi penglihatan komputer dalam pengenalan makanan, dan teknologi kesihatan pintar.">
+    <meta name="keywords" content="pemantauan nutrisi AI, pengenalan makanan, penglihatan komputer, pembelajaran mesin, teknologi kesihatan, analisis nutrisi">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .blog-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .blog-excerpt {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .category-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        .ai-tag { background: #9b59b6; }
+        .tech-tag { background: #3498db; }
+        .health-tag { background: #2ecc71; }
+        .research-tag { background: #e67e22; }
+        .featured {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .featured .blog-image {
+            height: 300px;
+        }
+        .featured .blog-content {
+            padding: 40px;
+        }
+        @media (max-width: 768px) {
+            .featured {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Blog Diet Scan AI</h1>
+            <p class="subtitle">Wawasan Teknologi Nutrisi & Kesihatan Bertenaga AI</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="blog-grid">
+            <!-- Artikel Utama -->
+            <article class="blog-card featured">
+                <div class="blog-image">🤖</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">Teknologi AI</span>
+                    <h2 class="blog-title">Bagaimana Penglihatan Komputer merevolusikan Pengenalan Makanan</h2>
+                    <div class="blog-meta">Diterbitkan: September 2025 | 8 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Temui bagaimana Diet Scan AI menggunakan algoritma penglihatan komputer canggih untuk mengenal pasti makanan dengan ketepatan 95%+. Pelajari tentang model pembelajaran mendalam, set data latihan, dan aplikasi dunia sebenar yang memungkinkan analisis nutrisi segera.
+                    </p>
+                    <a href="#" class="read-more">Baca Artikel Penuh →</a>
+                </div>
+            </article>
+
+            <!-- Artikel Biasa -->
+            <article class="blog-card">
+                <div class="blog-image">📊</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">Teknologi</span>
+                    <h3 class="blog-title">Sains di Sebalik Pemantauan Nutrisi AI</h3>
+                    <div class="blog-meta">September 2025 | 5 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Jelajahi algoritma pembelajaran mesin yang menggerakkan pengiraan kalori yang tepat dan analisis makro daripada foto makanan mudah.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🌍</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">Kesihatan Global</span>
+                    <h3 class="blog-title">Nutrisi Pelbagai Bahasa: Memecah Halangan</h3>
+                    <div class="blog-meta">September 2025 | 6 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Bagaimana Diet Scan AI menyokong 5 bahasa untuk menjadikan pemantauan nutrisi boleh diakses di seluruh dunia, dari masakan Asia hingga diet Barat.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🩺</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">Penyelidikan Kesihatan</span>
+                    <h3 class="blog-title">Pemantauan Indeks Glikemik dengan AI</h3>
+                    <div class="blog-meta">September 2025 | 7 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Pelajari bagaimana pemantauan indeks glikemik bertenaga AI membantu pesakit diabetes dan individu yang mementingkan kesihatan menguruskan tahap gula darah dengan berkesan.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🔬</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">Penyelidikan</span>
+                    <h3 class="blog-title">Melatih AI pada Pangkalan Data Makanan Global</h3>
+                    <div class="blog-meta">September 2025 | 9 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Di sebalik tabir: Bagaimana kami melatih model AI kami pada 100,000+ item makanan dari pelbagai masakan untuk mencapai pengenalan makanan universal.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">📱</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">AI Mudah Alih</span>
+                    <h3 class="blog-title">Pengkomputeran Tepi dalam Aplikasi Nutrisi</h3>
+                    <div class="blog-meta">September 2025 | 4 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Mengapa Diet Scan AI memproses analisis makanan secara tempatan pada peranti anda untuk privasi, kelajuan, dan fungsi luar talian.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🎯</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">Personalisasi</span>
+                    <h3 class="blog-title">Nutrisi Peribadi dengan Pembelajaran Mesin</h3>
+                    <div class="blog-meta">September 2025 | 6 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Bagaimana AI belajar daripada corak pemakanan anda untuk memberikan wawasan kesihatan peribadi dan cadangan nutrisi.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🚀</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">Teknologi Masa Depan</span>
+                    <h3 class="blog-title">Masa Depan AI dalam Penjagaan Kesihatan Pencegahan</h3>
+                    <div class="blog-meta">September 2025 | 8 minit bacaan</div>
+                    <p class="blog-excerpt">
+                        Menjelajahi bagaimana pemantauan nutrisi AI berkembang ke arah analitik kesihatan ramalan dan penyelesaian penjagaan pencegahan.
+                    </p>
+                    <a href="#" class="read-more">Baca Lagi →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog Diet Scan AI",
+        "description": "Wawasan tentang pemantauan nutrisi bertenaga AI, penglihatan komputer dalam analisis makanan, dan teknologi kesihatan pintar",
+        "url": "https://dietscannai.app/blog-ms.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Diet Scan AI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://dietscannai.app/images/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "Bagaimana Penglihatan Komputer merevolusikan Pengenalan Makanan",
+                "description": "Temui bagaimana Diet Scan AI menggunakan algoritma penglihatan komputer canggih untuk mengenal pasti makanan dengan ketepatan 95%+",
+                "datePublished": "2025-09-01",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Pasukan Penyelidikan Diet Scan AI"
+                },
+                "keywords": "penglihatan komputer, pengenalan makanan, AI, pembelajaran mesin, pemantauan nutrisi"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>

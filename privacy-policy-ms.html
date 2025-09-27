@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Privasi - Diet Scan AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        .policy-header {
+            margin-bottom: 30px;
+        }
+        
+        .policy-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .policy-content {
+            line-height: 1.8;
+        }
+        
+        .policy-content p {
+            margin-bottom: 20px;
+        }
+        
+        .policy-content h2 {
+            color: var(--primary-color);
+            margin: 40px 0 20px;
+        }
+        
+        .policy-content h3 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+        }
+        
+        .policy-content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .policy-content li {
+            margin-bottom: 10px;
+        }
+        
+        .policy-date {
+            font-style: italic;
+            color: var(--dark-gray);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Diet Scan AI Logo" class="logo-img"></a>
+                    <h1>Diet Scan AI</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#features">Ciri-ciri</a></li>
+                        <li><a href="index.html#how-it-works">Bagaimana Ia Berfungsi</a></li>
+                        <li><a href="index.html#faq">Soalan Lazim</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="support-ms.html">Sokongan</a></li>
+                        <li class="language-switch">
+                            <div class="language-dropdown">
+                                <button class="language-btn" id="language-btn">
+                                    <span>Bahasa Melayu</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <a href="privacy-policy.html">English</a>
+                                    <a href="privacy-policy-cn.html">中文</a>
+                                    <a href="privacy-policy-zh-TW.html">繁體中文</a>
+                                    <a href="privacy-policy-ms.html">Bahasa Melayu</a>
+                                    <a href="privacy-policy-ja.html">日本語</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <div class="policy-container">
+        <div class="policy-header">
+            <h1 class="policy-title">Dasar Privasi</h1>
+            <p class="policy-date">Terakhir Dikemaskini: 18 Mei 2025</p>
+        </div>
+        
+        <div class="policy-content">
+            <p>Diet Scan AI ("kami," "milik kami," atau "kita") komited untuk melindungi privasi anda. Dasar Privasi ini menerangkan amalan data kami untuk aplikasi analisis pemakanan dan pengiraan kalori kami.</p>
+            
+            <h2>Amalan Pengendalian Data</h2>
+            
+            <h3>Simpanan Tempatan Sahaja</h3>
+            <p>Semua data yang anda masukkan dalam Diet Scan AI, termasuk metrik kesihatan (berat, tinggi, umur), matlamat kecergasan, dan log makanan, disimpan <strong>secara eksklusif di peranti anda</strong>.</p>
+            <p>Kami tidak menyelenggara akaun pengguna atau menyimpan data peribadi anda di mana-mana pelayan.</p>
+            <p>Anda mengekalkan kawalan sepenuhnya ke atas maklumat anda pada setiap masa.</p>
+            
+            <h3>Penggunaan API Analisis Makanan</h3>
+            <p>Apabila anda menggunakan aplikasi kami untuk menganalisis item makanan:</p>
+            <ul>
+                <li>Penerangan/nama item makanan dihantar ke API analisis pemakanan pihak ketiga kami</li>
+                <li>Tiada maklumat pengenalan peribadi dihantar bersama permintaan analisis makanan ini</li>
+                <li>API mengembalikan maklumat pemakanan yang dipaparkan dalam aplikasi dan disimpan hanya pada peranti anda</li>
+                <li>Perkhidmatan analisis makanan mungkin menyimpan log pertanyaan makanan tanpa nama untuk meningkatkan ketepatan perkhidmatan mereka</li>
+                <li>Semua komunikasi dengan API disulitkan menggunakan protokol standard industri</li>
+            </ul>
+            
+            <h2>Pengisytiharan Wajib App Store</h2>
+            <p>Sebagai mematuhi keperluan Label Pemakanan Privasi Apple, kami mengisytiharkan:</p>
+            <ul>
+                <li><strong>Data Tidak Dikumpul</strong>: Kami tidak mengumpul sebarang maklumat peribadi, maklumat hubungan, pengecam, atau data kesihatan dari peranti anda</li>
+                <li><strong>Data Digunakan untuk Fungsi Aplikasi Sahaja</strong>: Data makanan yang diserahkan kepada API kami digunakan semata-mata untuk tujuan analisis pemakanan dan tidak dikaitkan dengan identiti anda</li>
+                <li><strong>Tiada Penjejakan</strong>: Kami tidak menjejaki anda merentasi aplikasi atau tapak web yang dimiliki oleh syarikat lain</li>
+            </ul>
+            
+            <h3>Analitis Apple</h3>
+            <ul>
+                <li>Statistik penggunaan tanpa nama mungkin dikumpul oleh Apple melalui alat analitis standard mereka</li>
+                <li>Data ini dianonimkan dan diagregatkan oleh Apple dan membantu kami memahami prestasi aplikasi</li>
+                <li>Anda boleh menarik diri daripada pengumpulan data ini melalui tetapan peranti anda pada bila-bila masa</li>
+            </ul>
+            
+            <h2>Hak dan Kawalan Anda</h2>
+            <ul>
+                <li>Memandangkan semua data anda disimpan secara tempatan pada peranti anda, anda boleh memadam semua data dengan hanya memadamkan aplikasi</li>
+                <li>Tiada pemulihan data yang mungkin selepas aplikasi dipadamkan, kerana kami tidak menyimpan sebarang sandaran di pelayan</li>
+            </ul>
+            
+            <h2>Perubahan kepada Dasar Ini</h2>
+            <p>Kami mungkin mengemas kini Dasar Privasi ini dari semasa ke semasa. Kami akan memberitahu anda tentang sebarang perubahan dengan menyiarkan dasar baharu di halaman ini dan mengemas kini tarikh "Terakhir Dikemaskini".</p>
+            
+            <h2>Hubungi Kami</h2>
+            <p>Jika anda mempunyai sebarang soalan mengenai Dasar Privasi ini, sila hubungi kami di support@dietscanai.app.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Diet Scan AI Logo" class="footer-logo-img">
+                    <h2>Diet Scan AI</h2>
+                    <p>Jejaki pemakanan anda dengan hanya sekeping gambar</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Pautan Pantas</h3>
+                    <ul>
+                        <li><a href="index.html#features">Ciri-ciri</a></li>
+                        <li><a href="index.html#how-it-works">Bagaimana Ia Berfungsi</a></li>
+                        <li><a href="index.html#faq">Soalan Lazim</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="support-ms.html">Sokongan</a></li>
+                        <li><a href="privacy-policy-ms.html">Dasar Privasi</a></li>
+                        <li><a href="terms-of-service-ms.html">Syarat Perkhidmatan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Diet Scan AI. Hak cipta terpelihara. <a href="privacy-policy-ms.html">Dasar Privasi</a> | <a href="terms-of-service-ms.html">Syarat Perkhidmatan</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

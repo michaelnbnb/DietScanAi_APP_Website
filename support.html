@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diet Scan AI - Support</title>
+    <title class="lang-en">Support - Diet Scan AI</title>
+    <title class="lang-cn">支持 - 食摄营养师 (Diet Scan AI)</title>
+    <title class="lang-zh-TW">支持 - 飲食掃描AI (Diet Scan AI)</title>
+    <title class="lang-ms">Sokongan - Diet Scan AI</title>
+    <title class="lang-ja">サポート - DietScan AI</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -105,17 +109,38 @@
             <nav>
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="Diet Scan AI Logo" class="logo-img"></a>
+                    <h1 class="lang-en">Diet Scan AI</h1>
+                    <h1 class="lang-cn">食摄营养师 (Diet Scan AI)</h1>
+                    <h1 class="lang-zh-TW">飲食掃描AI (Diet Scan AI)</h1>
+                    <h1 class="lang-ms">Diet Scan AI</h1>
+                    <h1 class="lang-ja">DietScan AI</h1>
                 </div>
                 <div class="nav-links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a></li>
-                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a></li>
-                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a></li>
-                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a></li>
+                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a><a href="index.html#features" class="lang-zh-TW">功能</a><a href="index.html#features" class="lang-ms">Ciri-ciri</a><a href="index.html#features" class="lang-ja">特徴</a></li>
+                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a><a href="index.html#how-it-works" class="lang-zh-TW">工作原理</a><a href="index.html#how-it-works" class="lang-ms">Bagaimana Ia Berfungsi</a><a href="index.html#how-it-works" class="lang-ja">仕組み</a></li>
+                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a><a href="index.html#faq" class="lang-zh-TW">常見問題</a><a href="index.html#faq" class="lang-ms">Soalan Lazim</a><a href="index.html#faq" class="lang-ja">よくある質問</a></li>
+                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a><a href="index.html#blog" class="lang-zh-TW">博客</a><a href="index.html#blog" class="lang-ms">Blog</a><a href="index.html#blog" class="lang-ja">ブログ</a></li>
+                        <li><a href="support.html" class="lang-en">Support</a><a href="support.html" class="lang-cn">支持</a><a href="support.html" class="lang-zh-TW">支持</a><a href="support.html" class="lang-ms">Sokongan</a><a href="support.html" class="lang-ja">サポート</a></li>
                         <li class="language-switch">
-                            <a href="javascript:void(0)" onclick="switchLanguage('en')" class="lang-switch lang-cn">English</a>
-                            <a href="javascript:void(0)" onclick="switchLanguage('cn')" class="lang-switch lang-en">中文</a>
+                            <div class="language-dropdown">
+                                <button class="language-btn" id="language-btn">
+                                    <span class="lang-en">English</span>
+                                    <span class="lang-cn">中文</span>
+                                    <span class="lang-zh-TW">繁體中文</span>
+                                    <span class="lang-ms">Bahasa Melayu</span>
+                                    <span class="lang-ja">日本語</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <a href="support.html">English</a>
+                                    <a href="support-cn.html">中文</a>
+                                    <a href="support-zh-TW.html">繁體中文</a>
+                                    <a href="support-ms.html">Bahasa Melayu</a>
+                                    <a href="support-ja.html">日本語</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -149,16 +174,28 @@
                     
                     <div class="faq-item">
                         <p class="faq-question lang-en">How accurate is Diet Scan AI's food recognition?</p>
-                        <p class="faq-question lang-cn">Diet Scan AI的食物识别准确度如何？</p>
+                        <p class="faq-question lang-cn">食摄营养师 (Diet Scan AI) 的食物识别准确度如何？</p>
+                        <p class="faq-question lang-zh-TW">飲食掃描AI (Diet Scan AI) 的食物識別準確度如何？</p>
+                        <p class="faq-question lang-ms">Sejauh manakah ketepatan pengecaman makanan Diet Scan AI?</p>
+                        <p class="faq-question lang-ja">DietScan AIの食品認識の精度はどのくらいですか？</p>
                         <p class="faq-answer lang-en">Diet Scan AI uses advanced AI technology to identify foods with high accuracy. Our system can recognize thousands of common food items and dishes. For best results, take clear photos in good lighting and position the food centrally in the frame.</p>
-                        <p class="faq-answer lang-cn">Diet Scan AI使用先进的AI技术，能够高精度识别食物。我们的系统可以识别数千种常见食品和菜肴。为获得最佳效果，请在良好的光线下拍摄清晰的照片，并将食物放在画面中央。</p>
+                        <p class="faq-answer lang-cn">食摄营养师 (Diet Scan AI) 使用先进的AI技术，能够高精度识别食物。我们的系统可以识别数千种常见食品和菜肴。为获得最佳效果，请在良好的光线下拍摄清晰的照片，并将食物放在画面中央。</p>
+                        <p class="faq-answer lang-zh-TW">飲食掃描AI (Diet Scan AI) 使用先進的AI技術，能夠高精度識別食物。我們的系統可以識別數千種常見食品和菜餚。為獲得最佳效果，請在良好的光線下拍攝清晰的照片，並將食物放在畫面中央。</p>
+                        <p class="faq-answer lang-ms">Diet Scan AI menggunakan teknologi AI canggih untuk mengenal pasti makanan dengan ketepatan yang tinggi. Sistem kami boleh mengenali beribu-ribu item makanan dan hidangan biasa. Untuk hasil terbaik, ambil gambar yang jelas dalam pencahayaan yang baik dan letakkan makanan di tengah bingkai.</p>
+                        <p class="faq-answer lang-ja">DietScan AIは高度なAI技術を使用して、高い精度で食品を識別します。当社のシステムは、何千もの一般的な食品アイテムや料理を認識できます。最良の結果を得るには、良好な照明で鮮明な写真を撮り、食品をフレームの中央に配置してください。</p>
                     </div>
                     
                     <div class="faq-item">
                         <p class="faq-question lang-en">Can I track my daily nutrition intake over time?</p>
                         <p class="faq-question lang-cn">我可以长期追踪每日营养摄入量吗？</p>
+                        <p class="faq-question lang-zh-TW">我可以長期追踪每日營養攝入量嗎？</p>
+                        <p class="faq-question lang-ms">Bolehkah saya menjejaki pengambilan pemakanan harian saya dari semasa ke semasa?</p>
+                        <p class="faq-question lang-ja">毎日の栄養摂取量を長期的に追跡できますか？</p>
                         <p class="faq-answer lang-en">Yes! Diet Scan AI stores your meal history, allowing you to view daily, weekly, and monthly nutrition trends. You can track calories, macronutrients (protein, carbs, fat), and glycemic index over time to help achieve your health goals.</p>
-                        <p class="faq-answer lang-cn">是的！Diet Scan AI会存储您的餐食历史记录，让您可以查看每日、每周和每月的营养趋势。您可以长期追踪卡路里、宏量营养素（蛋白质、碳水化合物、脂肪）和血糖指数，帮助您实现健康目标。</p>
+                        <p class="faq-answer lang-cn">是的！食摄营养师 (Diet Scan AI) 会存储您的餐食历史记录，让您可以查看每日、每周和每月的营养趋势。您可以长期追踪卡路里、宏量营养素（蛋白质、碳水化合物、脂肪）和血糖指数，帮助您实现健康目标。</p>
+                        <p class="faq-answer lang-zh-TW">是的！飲食掃描AI (Diet Scan AI) 會存儲您的餐食歷史記錄，讓您可以查看每日、每週和每月的營養趨勢。您可以長期追踪卡路里、宏量營養素（蛋白質、碳水化合物、脂肪）和血糖指數，幫助您實現健康目標。</p>
+                        <p class="faq-answer lang-ms">Ya! Diet Scan AI menyimpan sejarah makanan anda, membolehkan anda melihat trend pemakanan harian, mingguan dan bulanan. Anda boleh menjejaki kalori, makronutrien (protein, karbohidrat, lemak), dan indeks glisemik dari semasa ke semasa untuk membantu mencapai matlamat kesihatan anda.</p>
+                        <p class="faq-answer lang-ja">はい！DietScan AIは食事履歴を保存し、毎日、毎週、毎月の栄養トレンドを表示できます。カロリー、主要栄養素（タンパク質、炭水化物、脂質）、グリセミック指数を長期的に追跡して、健康目標の達成に役立てることができます。</p>
                     </div>
                     
                     <div class="faq-item">
@@ -178,8 +215,14 @@
                     <div class="faq-item">
                         <p class="faq-question lang-en">Can I manually add or edit food items?</p>
                         <p class="faq-question lang-cn">我可以手动添加或编辑食物项目吗？</p>
+                        <p class="faq-question lang-zh-TW">我可以手動添加或編輯食物項目嗎？</p>
+                        <p class="faq-question lang-ms">Bolehkah saya menambah atau mengedit item makanan secara manual?</p>
+                        <p class="faq-question lang-ja">食品アイテムを手動で追加または編集できますか？</p>
                         <p class="faq-answer lang-en">Yes, Diet Scan AI allows you to manually add food items or edit the AI's recognition results. This is useful for custom recipes, rare foods, or when you want to adjust portion sizes.</p>
-                        <p class="faq-answer lang-cn">是的，Diet Scan AI允许您手动添加食物项目或编辑AI的识别结果。这对于自定义食谱、罕见食物或当您想调整份量大小时非常有用。</p>
+                        <p class="faq-answer lang-cn">是的，食摄营养师 (Diet Scan AI) 允许您手动添加食物项目或编辑AI的识别结果。这对于自定义食谱、罕见食物或当您想调整份量大小时非常有用。</p>
+                        <p class="faq-answer lang-zh-TW">是的，飲食掃描AI (Diet Scan AI) 允許您手動添加食物項目或編輯AI的識別結果。這對於自定義食譜、罕見食物或當您想調整份量大小時非常有用。</p>
+                        <p class="faq-answer lang-ms">Ya, Diet Scan AI membolehkan anda menambah item makanan secara manual atau mengedit hasil pengecaman AI. Ini berguna untuk resipi tersuai, makanan yang jarang ditemui, atau apabila anda ingin melaraskan saiz hidangan.</p>
+                        <p class="faq-answer lang-ja">はい、DietScan AIでは、食品アイテムを手動で追加したり、AIの認識結果を編集したりすることができます。これは、カスタムレシピ、珍しい食品、または分量を調整したい場合に便利です。</p>
                     </div>
                 </div>
                 
@@ -229,16 +272,25 @@
                 <div class="footer-links">
                     <h3 class="lang-en">Quick Links</h3>
                     <h3 class="lang-cn">快速链接</h3>
+                    <h3 class="lang-zh-TW">快速鏈接</h3>
+                    <h3 class="lang-ms">Pautan Pantas</h3>
+                    <h3 class="lang-ja">クイックリンク</h3>
                     <ul>
-                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a></li>
-                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a></li>
-                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a></li>
-                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a></li>
+                        <li><a href="index.html#features" class="lang-en">Features</a><a href="index.html#features" class="lang-cn">功能</a><a href="index.html#features" class="lang-zh-TW">功能</a><a href="index.html#features" class="lang-ms">Ciri-ciri</a><a href="index.html#features" class="lang-ja">特徴</a></li>
+                        <li><a href="index.html#how-it-works" class="lang-en">How It Works</a><a href="index.html#how-it-works" class="lang-cn">工作原理</a><a href="index.html#how-it-works" class="lang-zh-TW">工作原理</a><a href="index.html#how-it-works" class="lang-ms">Bagaimana Ia Berfungsi</a><a href="index.html#how-it-works" class="lang-ja">仕組み</a></li>
+                        <li><a href="index.html#faq" class="lang-en">FAQ</a><a href="index.html#faq" class="lang-cn">常见问题</a><a href="index.html#faq" class="lang-zh-TW">常見問題</a><a href="index.html#faq" class="lang-ms">Soalan Lazim</a><a href="index.html#faq" class="lang-ja">よくある質問</a></li>
+                        <li><a href="index.html#blog" class="lang-en">Blog</a><a href="index.html#blog" class="lang-cn">博客</a><a href="index.html#blog" class="lang-zh-TW">博客</a><a href="index.html#blog" class="lang-ms">Blog</a><a href="index.html#blog" class="lang-ja">ブログ</a></li>
+                        <li><a href="support.html" class="lang-en">Support</a><a href="support.html" class="lang-cn">支持</a><a href="support.html" class="lang-zh-TW">支持</a><a href="support.html" class="lang-ms">Sokongan</a><a href="support.html" class="lang-ja">サポート</a></li>
+                        <li><a href="privacy-policy.html" class="lang-en">Privacy Policy</a><a href="privacy-policy.html" class="lang-cn">隐私政策</a><a href="privacy-policy.html" class="lang-zh-TW">隱私政策</a><a href="privacy-policy.html" class="lang-ms">Dasar Privasi</a><a href="privacy-policy.html" class="lang-ja">プライバシーポリシー</a></li>
+                        <li><a href="terms-of-service.html" class="lang-en">Terms of Service</a><a href="terms-of-service.html" class="lang-cn">使用条款</a><a href="terms-of-service.html" class="lang-zh-TW">服務條款</a><a href="terms-of-service.html" class="lang-ms">Syarat Perkhidmatan</a><a href="terms-of-service.html" class="lang-ja">利用規約</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h3 class="lang-en">Contact Us</h3>
                     <h3 class="lang-cn">联系我们</h3>
+                    <h3 class="lang-zh-TW">聯繫我們</h3>
+                    <h3 class="lang-ms">Hubungi Kami</h3>
+                    <h3 class="lang-ja">お問い合わせ</h3>
                     <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -248,7 +300,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Diet Scan AI. All rights reserved. <a href="privacy-policy.html" class="lang-en">Privacy Policy</a><a href="privacy-policy.html" class="lang-cn">隐私政策</a> | <a href="terms-of-service.html" class="lang-en">Terms of Service</a><a href="terms-of-service.html" class="lang-cn">使用条款</a></p>
+                <p>&copy; 2025 Diet Scan AI. <span class="lang-en">All rights reserved.</span><span class="lang-cn">版权所有。</span><span class="lang-zh-TW">版權所有。</span><span class="lang-ms">Hak cipta terpelihara.</span><span class="lang-ja">全著作权所有。</span> <a href="privacy-policy.html" class="lang-en">Privacy Policy</a><a href="privacy-policy.html" class="lang-cn">隐私政策</a><a href="privacy-policy.html" class="lang-zh-TW">隱私政策</a><a href="privacy-policy.html" class="lang-ms">Dasar Privasi</a><a href="privacy-policy.html" class="lang-ja">プライバシーポリシー</a> | <a href="terms-of-service.html" class="lang-en">Terms of Service</a><a href="terms-of-service.html" class="lang-cn">使用条款</a><a href="terms-of-service.html" class="lang-zh-TW">服務條款</a><a href="terms-of-service.html" class="lang-ms">Syarat Perkhidmatan</a><a href="terms-of-service.html" class="lang-ja">利用規約</a></p>
             </div>
         </div>
     </footer>

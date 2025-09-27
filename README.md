@@ -1,6 +1,6 @@
-# DietScanAI 官方网站
+# Diet Scan AI 官方网站
 
-这是DietScanAI iOS应用的官方网站，用于展示应用功能、工作原理和相关信息。网站支持英文和中文两种语言，采用响应式设计，适配各种设备尺寸。
+这是Diet Scan AI iOS应用的官方网站，用于展示应用功能、工作原理和相关信息。网站支持英文和中文两种语言，采用响应式设计，适配各种设备尺寸。
 
 ## 功能特点
 
@@ -47,7 +47,7 @@
 2. 将此网站代码推送到该仓库
 3. 在仓库设置中启用GitHub Pages功能
 4. 选择部署分支（通常是`main`或`master`）
-5. 如果需要使用自定义域名（如`DietScanAI.app`）：
+5. 如果需要使用自定义域名（如`Diet Scan AI.app`）：
    - 在DNS提供商处添加CNAME记录，指向`<your-username>.github.io`
    - 在仓库的GitHub Pages设置中添加自定义域名
    - 建议启用HTTPS
@@ -76,4 +76,4 @@
 
 ## 许可证
 
-© 2024 DietScanAI. 保留所有权利。
+© 2024 Diet Scan AI. 保留所有权利。

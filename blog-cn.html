@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Scan AI 博客 - AI营养追踪技术洞察</title>
+    <meta name="description" content="探索AI驱动的营养追踪、食物识别中的计算机视觉技术以及智能健康科技的最新洞察和研究成果。">
+    <meta name="keywords" content="AI营养追踪, 食物识别, 计算机视觉, 机器学习, 健康科技, 营养分析">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .blog-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .blog-excerpt {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .category-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        .ai-tag { background: #9b59b6; }
+        .tech-tag { background: #3498db; }
+        .health-tag { background: #2ecc71; }
+        .research-tag { background: #e67e22; }
+        .featured {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .featured .blog-image {
+            height: 300px;
+        }
+        .featured .blog-content {
+            padding: 40px;
+        }
+        @media (max-width: 768px) {
+            .featured {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diet Scan AI 博客</h1>
+            <p class="subtitle">AI驱动的营养与健康技术洞察</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="blog-grid">
+            <!-- 特色文章 -->
+            <article class="blog-card featured">
+                <div class="blog-image">🤖</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">AI技术</span>
+                    <h2 class="blog-title">计算机视觉如何革命性地改变食物识别</h2>
+                    <div class="blog-meta">发布时间：2025年9月 | 8分钟阅读</div>
+                    <p class="blog-excerpt">
+                        探索Diet Scan AI如何使用先进的计算机视觉算法以95%+的准确率识别食物。了解深度学习模型、训练数据集以及使即时营养分析成为可能的实际应用。
+                    </p>
+                    <a href="#" class="read-more">阅读全文 →</a>
+                </div>
+            </article>
+
+            <!-- 常规文章 -->
+            <article class="blog-card">
+                <div class="blog-image">📊</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">技术</span>
+                    <h3 class="blog-title">AI营养追踪背后的科学原理</h3>
+                    <div class="blog-meta">2025年9月 | 5分钟阅读</div>
+                    <p class="blog-excerpt">
+                        探索通过简单食物照片实现精确卡路里计算和宏量营养素分析的机器学习算法。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🌍</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">全球健康</span>
+                    <h3 class="blog-title">多语言营养：打破语言障碍</h3>
+                    <div class="blog-meta">2025年9月 | 6分钟阅读</div>
+                    <p class="blog-excerpt">
+                        Diet Scan AI如何支持5种语言，让全球营养追踪变得触手可及，从亚洲菜系到西方饮食。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🩺</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">健康研究</span>
+                    <h3 class="blog-title">AI血糖指数监测</h3>
+                    <div class="blog-meta">2025年9月 | 7分钟阅读</div>
+                    <p class="blog-excerpt">
+                        了解AI驱动的血糖指数追踪如何帮助糖尿病患者和注重健康的人群有效管理血糖水平。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🔬</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">研究</span>
+                    <h3 class="blog-title">在全球食物数据库上训练AI</h3>
+                    <div class="blog-meta">2025年9月 | 9分钟阅读</div>
+                    <p class="blog-excerpt">
+                        幕后揭秘：我们如何在来自不同菜系的100,000+食物项目上训练AI模型，实现通用食物识别。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">📱</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">移动AI</span>
+                    <h3 class="blog-title">营养应用中的边缘计算</h3>
+                    <div class="blog-meta">2025年9月 | 4分钟阅读</div>
+                    <p class="blog-excerpt">
+                        为什么Diet Scan AI在您的设备上本地处理食物分析，以保护隐私、提高速度并实现离线功能。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🎯</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">个性化</span>
+                    <h3 class="blog-title">机器学习个性化营养</h3>
+                    <div class="blog-meta">2025年9月 | 6分钟阅读</div>
+                    <p class="blog-excerpt">
+                        AI如何从您的饮食模式中学习，提供个性化的健康洞察和营养建议。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🚀</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">未来科技</span>
+                    <h3 class="blog-title">AI在预防性医疗保健中的未来</h3>
+                    <div class="blog-meta">2025年9月 | 8分钟阅读</div>
+                    <p class="blog-excerpt">
+                        探索AI营养追踪如何向预测性健康分析和预防性护理解决方案发展。
+                    </p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Diet Scan AI 博客",
+        "description": "AI驱动的营养追踪、食物分析中的计算机视觉以及智能健康技术洞察",
+        "url": "https://dietscannai.app/blog-cn.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Diet Scan AI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://dietscannai.app/images/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "计算机视觉如何革命性地改变食物识别",
+                "description": "探索Diet Scan AI如何使用先进的计算机视觉算法以95%+的准确率识别食物",
+                "datePublished": "2025-09-01",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Diet Scan AI 研究团队"
+                },
+                "keywords": "计算机视觉, 食物识别, AI, 机器学习, 营养追踪"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>

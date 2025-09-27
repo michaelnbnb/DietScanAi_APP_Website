@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Scan AI - App Store 下载二维码</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .qr-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .app-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin: 0 auto 20px;
+            display: block;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin: 0 0 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .subtitle {
+            color: #666;
+            margin: 0 0 30px;
+            font-size: 16px;
+        }
+        #qrcode {
+            margin: 20px auto;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            display: inline-block;
+        }
+        .download-link {
+            display: inline-block;
+            background: #007AFF;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .download-link:hover {
+            background: #0056CC;
+        }
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 12px;
+            border-left: 4px solid #007AFF;
+        }
+        .instructions h3 {
+            color: #007AFF;
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .instructions p {
+            color: #555;
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+            min-width: 100px;
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .feature-text {
+            font-size: 12px;
+            color: #666;
+        }
+        @media (max-width: 480px) {
+            .qr-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-container">
+        <img src="images/logo.png" alt="Diet Scan AI Logo" class="app-logo">
+        <h1>Diet Scan AI</h1>
+        <p class="subtitle">AI智能营养追踪应用</p>
+        
+        <div id="qrcode"></div>
+        
+        <a href="https://apps.apple.com/app/id6745579411" class="download-link" target="_blank">
+            📱 直接下载
+        </a>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-text">全球通用</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔄</div>
+                <div class="feature-text">自动跳转</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-text">扫码下载</div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 使用说明</h3>
+            <p>🇺🇸 <strong>美国用户：</strong>扫码自动跳转美国App Store</p>
+            <p>🇨🇳 <strong>中国用户：</strong>扫码自动跳转中国App Store</p>
+            <p>🇯🇵 <strong>日本用户：</strong>扫码自动跳转日本App Store</p>
+            <p>🇲🇾 <strong>马来西亚用户：</strong>扫码自动跳转马来西亚App Store</p>
+            <p>🌍 <strong>其他地区：</strong>自动跳转到对应地区App Store</p>
+        </div>
+    </div>
+
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    
+    <script>
+        // 生成二维码
+        const appStoreUrl = 'https://apps.apple.com/app/id6745579411';
+        
+        // 等待QRCode库加载完成
+        function generateQRCode() {
+            if (typeof QRCode === 'undefined') {
+                console.log('QRCode库未加载，3秒后重试...');
+                setTimeout(generateQRCode, 3000);
+                return;
+            }
+            
+            try {
+                // 清空容器
+                const qrContainer = document.getElementById('qrcode');
+                qrContainer.innerHTML = '';
+                
+                // 配置二维码选项
+                const qrOptions = {
+                    width: 200,
+                    height: 200,
+                    colorDark: '#000000',
+                    colorLight: '#ffffff',
+                    correctLevel: QRCode.CorrectLevel.H,
+                    margin: 2
+                };
+                
+                // 生成二维码到容器
+                QRCode.toCanvas(qrContainer, appStoreUrl, qrOptions, function (error) {
+                    if (error) {
+                        console.error('二维码生成失败:', error);
+                        showFallbackQR();
+                    } else {
+                        console.log('二维码生成成功!');
+                        // 为生成的canvas添加样式
+                        const canvas = qrContainer.querySelector('canvas');
+                        if (canvas) {
+                            canvas.style.border = '2px solid #ddd';
+                            canvas.style.borderRadius = '8px';
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('二维码生成异常:', error);
+                showFallbackQR();
+            }
+        }
+        
+        // 备用二维码显示方案
+        function showFallbackQR() {
+            const qrContainer = document.getElementById('qrcode');
+            qrContainer.innerHTML = `
+                <div style="padding: 20px; text-align: center; border: 2px dashed #ccc; border-radius: 8px;">
+                    <p style="margin: 0 0 10px; color: #666;">📱 扫码下载 Diet Scan AI</p>
+                    <p style="margin: 0; font-size: 12px; color: #999;">二维码加载中，请直接点击下载按钮</p>
+                </div>
+            `;
+        }
+        
+        // 开始生成二维码
+        generateQRCode();
+        
+        // 添加点击统计（可选）
+        document.querySelector('.download-link').addEventListener('click', function() {
+            console.log('用户点击了直接下载链接');
+        });
+    </script>
+</body>
+</html>

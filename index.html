@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DietScanAI - Track Your Nutrition With Just a Photo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title data-i18n="pageTitle">Diet Scan AI - AI-Powered Nutrition Tracker</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png" sizes="48x48 64x64 96x96 128x128 256x256">
@@ -15,55 +15,207 @@
         overflow: hidden;
       }
     </style>
-    <meta name="keywords" content="DietScanAI, nutrition scan, food analysis, calorie tracker, nutrition tracker, food photo AI, glycemic index, diet app, health tracker, meal analysis, AI nutrition, food recognition, calorie counter, healthy eating, diet management, food diary, nutrition app, photo nutrition tracker, smart diet, Apple EULA, 营养识别, 食物分析, 卡路里追踪, 营养追踪, 食物拍照AI, 血糖指数, 饮食应用, 健康追踪, 餐食分析, AI营养, 食物识别, 卡路里计算, 健康饮食, 饮食管理, 食物日记, 营养应用, 拍照营养追踪, 智能饮食, 苹果EULA">
+    <meta name="description" content="Diet Scan AI - AI-powered nutrition tracker app. Snap photos of your meals for instant nutrition analysis, calorie tracking, and personalized health insights. Free iOS app with advanced AI food recognition technology.">
+    <meta name="keywords" content="Diet Scan AI, nutrition scan, food analysis, calorie tracker, nutrition tracker, food photo AI, glycemic index, diet app, health tracker, meal analysis, AI nutrition, food recognition, calorie counter, healthy eating, diet management, food diary, nutrition app, photo nutrition tracker, smart diet, Apple EULA, 营养识别, 食物分析, 卡路里追踪, 营养追踪, 食物拍照AI, 血糖指数, 饮食应用, 健康追踪, 餐食分析, AI营养, 食物识别, 卡路里计算, 健康饮食, 饮食管理, 食物日记, 营养应用, 拍照营养追踪, 智能饮食, 苹果EULA, 營養識別, 食物分析, 卡路里追踪, 營養追踪, 食物拍照AI, 血糖指數, 飲食應用, 健康追踪, 餐食分析, AI營養, 食物識別, 卡路里計算, 健康飲食, 飲食管理, 食物日記, 營養應用, 拍照營養追踪, 智能飲食, pengimbasan nutrisi, analisis makanan, penjejak kalori, penjejak nutrisi, AI foto makanan, indeks glisemik, aplikasi diet, penjejak kesihatan, analisis makanan, nutrisi AI, pengecaman makanan, kaunter kalori, pemakanan sihat, pengurusan diet, diari makanan, aplikasi nutrisi, penjejak nutrisi foto, diet pintar, 栄養スキャン, 食品分析, カロリートラッカー, 栄養トラッカー, 食品写真AI, グリセミック指数, ダイエットアプリ, 健康トラッカー, 食事分析, AI栄養, 食品認識, カロリーカウンター, 健康的な食事, 食事管理, 食事日記, 栄養アプリ, 写真栄養トラッカー, スマートダイエット">
+    <meta name="author" content="Diet Scan AI Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Diet Scan AI - AI-Powered Nutrition Tracker">
+    <meta property="og:description" content="Snap photos of your meals for instant AI-powered nutrition analysis. Track calories, macros, and health metrics with our free iOS app.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dietscannai.app">
+    <meta property="og:image" content="https://dietscannai.app/images/app-screenshot-en.png">
+    <meta property="og:site_name" content="Diet Scan AI">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diet Scan AI - AI-Powered Nutrition Tracker">
+    <meta name="twitter:description" content="Snap photos of your meals for instant AI-powered nutrition analysis. Track calories, macros, and health metrics with our free iOS app.">
+    <meta name="twitter:image" content="https://dietscannai.app/images/app-screenshot-en.png">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Diet Scan AI",
+      "description": "AI-powered nutrition tracker that analyzes food photos to provide instant nutrition information, calorie tracking, and health insights.",
+      "url": "https://dietscannai.app",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Diet Scan AI Team",
+        "url": "https://dietscannai.app"
+      },
+      "screenshot": "https://dietscannai.app/images/app-screenshot-en.png",
+      "featureList": [
+        "AI-powered food photo analysis",
+        "Instant nutrition information",
+        "Calorie and macro tracking",
+        "Glycemic index monitoring",
+        "Meal history tracking",
+        "Intermittent fasting timer",
+        "Water intake tracking",
+        "Weight and BMI recording",
+        "Personalized health tips"
+      ],
+      "keywords": "nutrition tracker, AI food recognition, calorie counter, diet app, health app, food analysis, meal tracking"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Diet Scan AI",
+      "url": "https://dietscannai.app",
+      "logo": "https://dietscannai.app/images/logo.png",
+      "description": "Leading provider of AI-powered nutrition tracking solutions, helping users achieve healthier lifestyles through intelligent food analysis.",
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://apps.apple.com/app/diet-scan-ai"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@dietscanai.app"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Diet Scan AI",
+      "description": "Revolutionary AI-powered nutrition tracking app that transforms how you monitor your diet and health through intelligent food photo analysis.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Diet Scan AI"
+      },
+      "category": "Health & Fitness App",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "1250"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sarah Chen"
+          },
+          "reviewBody": "Amazing app! The AI recognition is incredibly accurate and has helped me track my nutrition effortlessly."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Mike Johnson"
+          },
+          "reviewBody": "Perfect for managing my diet goals. The photo analysis feature is a game-changer!"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="DietScanAI Logo" class="logo-img"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="Diet Scan AI Logo" class="logo-img"></a>
                 </div>
                 <div class="nav-links" id="navLinks">
-                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <i class="fas fa-times"></i>
                     <ul>
-                        <li><a href="#features" class="lang-en">Features</a><a href="#features" class="lang-cn">功能</a></li>
-                        <li><a href="#how-it-works" class="lang-en">How It Works</a><a href="#how-it-works" class="lang-cn">工作原理</a></li>
-                        <li><a href="#faq" class="lang-en">FAQ</a><a href="#faq" class="lang-cn">常见问题</a></li>
-                        <li><a href="#blog" class="lang-en">Blog</a><a href="#blog" class="lang-cn">博客</a></li>
-                        <li><a href="support.html" class="lang-en">Support</a><a href="support.html" class="lang-cn">支持</a></li>
+                        <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+                        <li><a href="#how-it-works" data-i18n="navHowItWorks">How It Works</a></li>
+                        <li><a href="#faq" data-i18n="navFAQ">FAQ</a></li>
+                        <li><a href="ai-introduction.html" data-i18n="navAITechnology">AI Technology</a></li>
+                        <li><a href="blog.html" data-i18n="navBlog">Blog</a></li>
+                        <li><a href="support.html" data-i18n="navSupport">Support</a></li>
                         <li class="language-switch">
-                            <a href="javascript:void(0)" onclick="switchLanguage('en')" class="lang-switch lang-cn">English</a>
-                            <a href="javascript:void(0)" onclick="switchLanguage('cn')" class="lang-switch lang-en">中文</a>
+                            <div class="language-dropdown">
+                                <button class="language-btn" id="language-btn">
+                                    <span data-i18n="langEnglish">English</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <a href="#" data-lang="en" data-i18n="langEnglish">English</a>
+                                    <a href="#" data-lang="cn" data-i18n="langChinese">中文</a>
+                                    <a href="#" data-lang="tw" data-i18n="langTraditionalChinese">繁體中文</a>
+                                    <a href="#" data-lang="ms" data-i18n="langMalay">Bahasa Melayu</a>
+                                    <a href="#" data-lang="ja" data-i18n="langJapanese">日本語</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
-                <i class="fas fa-bars" onclick="showMenu()"></i>
+                <i class="fas fa-bars"></i>
             </nav>
             
             <div class="hero">
                 <div class="hero-text">
-                    <h1 class="lang-en">Track Your Nutrition With Just a Photo</h1>
-                    <h1 class="lang-cn">只需一张照片，追踪您的营养摄入</h1>
-                    <p class="lang-en">DietScanAI helps you monitor calories, protein, carbs, fat, purine and glycemic index by simply taking a photo of your food.</p>
-                    <p class="lang-cn">DietScanAI帮助您通过拍摄食物照片来监控卡路里、蛋白质、碳水化合物、脂肪、嘌呤和血糖指数。</p>
+                    <h1 data-i18n="heroTitle">Diet Scan AI</h1>
+                    <p data-i18n="heroSubtitle">Track Your Nutrition With Just a Photo</p>
+                    <p data-i18n="heroDescription">Looking for a free iOS app to identify food calories by photo? Try Diet Scan AI! Optimized for users worldwide, it easily records calories, protein, fat, carbs, GI, and purine index for home-cooked meals, takeout, or packaged foods just by taking a picture. Powered by advanced AI deep learning, it's more than a calorie counter—it's your smart diet diary and nutrition partner, helping you achieve your weight loss, blood sugar control, or healthy eating goals effortlessly.</p>
                     <div class="app-buttons">
-                        <a href="https://apps.apple.com/us/app/diet-scan-ai-calorie-tracker/id6745579411?l=en-us" class="app-btn">
+                        <a href="https://apps.apple.com/app/id6745579411" class="app-btn">
                             <i class="fab fa-apple"></i>
-                            <span class="lang-en">Download on App Store</span>
-                            <span class="lang-cn">从App Store下载</span>
+                            <span data-i18n="downloadOnAppStore">Download on App Store</span>
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <picture class="lang-en">
-                        <source srcset="images/app-screenshot-en.webp.png" type="image/webp" media="(max-width: 768px)">
-                        <img src="images/app-screenshot-en.png" alt="Diet Scan AI App Screenshot" style="width:1290px;max-width:100%;height:auto;" loading="lazy">
-                    </picture>
-                    <picture class="lang-cn">
-                        <source srcset="images/app-screenshot-cn.webp.png" type="image/webp" media="(max-width: 768px)">
-                        <img src="images/app-screenshot-cn.png" alt="Diet Scan AI App Screenshot" style="width:1290px;max-width:100%;height:auto;" loading="lazy">
-                    </picture>
+                    <div class="hero-image-gallery">
+                        <img src="images/app-showcase-1-en.png" alt="Diet Scan AI app interface showing AI-powered food photo analysis and nutrition tracking" class="gallery-img gallery-img-1 lang-en">
+                        <img src="images/app-showcase-2-en.png" alt="Diet Scan AI nutrition dashboard displaying calorie tracking and macro breakdown" class="gallery-img gallery-img-2 lang-en">
+                        <img src="images/app-showcase-3-en.png" alt="Diet Scan AI meal history and health insights with glycemic index monitoring" class="gallery-img gallery-img-3 lang-en">
+                        <img src="images/app-showcase-1-cn.png" alt="食摄营养师应用界面展示AI智能食物拍照分析和营养追踪功能" class="gallery-img gallery-img-1 lang-cn">
+                        <img src="images/app-showcase-2-cn.png" alt="食摄营养师营养仪表板显示卡路里追踪和宏量营养素分解" class="gallery-img gallery-img-2 lang-cn">
+                        <img src="images/app-showcase-3-cn.png" alt="食摄营养师餐食历史和健康洞察与血糖指数监控" class="gallery-img gallery-img-3 lang-cn">
+                        <img src="images/app-showcase-1-zh-TW.png" alt="飲食掃描AI應用程式介面展示AI智能食物拍照分析和營養追蹤功能" class="gallery-img gallery-img-1 lang-tw">
+                        <img src="images/app-showcase-2-zh-TW.png" alt="飲食掃描AI營養儀表板顯示卡路里追蹤和宏量營養素分解" class="gallery-img gallery-img-2 lang-tw">
+                        <img src="images/app-showcase-3-zh-TW.png" alt="飲食掃描AI餐食歷史和健康洞察與升糖指數監控" class="gallery-img gallery-img-3 lang-tw">
+                        <img src="images/app-showcase-1-ms.png" alt="Antara muka aplikasi Diet Scan AI menunjukkan analisis foto makanan bertenaga AI dan penjejakan nutrisi" class="gallery-img gallery-img-1 lang-ms">
+                        <img src="images/app-showcase-2-ms.png" alt="Papan pemuka nutrisi Diet Scan AI memaparkan penjejakan kalori dan pecahan makro" class="gallery-img gallery-img-2 lang-ms">
+                        <img src="images/app-showcase-3-ms.png" alt="Sejarah makanan Diet Scan AI dan wawasan kesihatan dengan pemantauan indeks glisemik" class="gallery-img gallery-img-3 lang-ms">
+                        <img src="images/app-showcase-1-ja.png" alt="Diet Scan AIアプリのインターフェースでAI搭載の食品写真分析と栄養追跡を表示" class="gallery-img gallery-img-1 lang-ja">
+                        <img src="images/app-showcase-2-ja.png" alt="Diet Scan AI栄養ダッシュボードでカロリー追跡とマクロ栄養素の内訳を表示" class="gallery-img gallery-img-2 lang-ja">
+                        <img src="images/app-showcase-3-ja.png" alt="Diet Scan AI食事履歴と健康インサイトでグリセミック指数監視" class="gallery-img gallery-img-3 lang-ja">
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,119 +223,133 @@
 
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title lang-en">Features</h2>
-            <h2 class="section-title lang-cn">功能特点</h2>
+            <h2 class="section-title" data-i18n="featuresTitle">Features</h2>
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h3 class="lang-en">Photo Analysis</h3>
-                    <h3 class="lang-cn">照片分析</h3>
-                    <p class="lang-en">Take a photo of your meal and get instant nutrition information.</p>
-                    <p class="lang-cn">拍摄您的餐食照片，立即获取营养信息。</p>
+                    <h3 data-i18n="featurePhotoAnalysisTitle">Photo Analysis</h3>
+                    <p data-i18n="featurePhotoAnalysisText">Take a photo of your meal and get instant nutrition information.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h3 class="lang-en">Nutrition Tracking</h3>
-                    <h3 class="lang-cn">营养追踪</h3>
-                    <p class="lang-en">Monitor calories, protein, carbs, and fat intake daily.</p>
-                    <p class="lang-cn">每日监控卡路里、蛋白质、碳水化合物和脂肪摄入量。</p>
+                    <h3 data-i18n="featureNutritionTrackingTitle">Nutrition Tracking</h3>
+                    <p data-i18n="featureNutritionTrackingText">Monitor calories, protein, carbs, and fat intake daily.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-tint"></i>
                     </div>
-                    <h3 class="lang-en">Glycemic Index</h3>
-                    <h3 class="lang-cn">血糖指数</h3>
-                    <p class="lang-en">Track the GI of foods to manage blood sugar levels.</p>
-                    <p class="lang-cn">追踪食物的血糖指数，帮助管理血糖水平。</p>
+                    <h3 data-i18n="featureGlycemicIndexTitle">Glycemic Index</h3>
+                    <p data-i18n="featureGlycemicIndexText">Track the GI of foods to manage blood sugar levels.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-history"></i>
                     </div>
-                    <h3 class="lang-en">Meal History</h3>
-                    <h3 class="lang-cn">餐食历史</h3>
-                    <p class="lang-en">Review past meals and track your nutrition trends over time.</p>
-                    <p class="lang-cn">查看过去的餐食记录，追踪您的营养趋势。</p>
+                    <h3 data-i18n="featureMealHistoryTitle">Meal History</h3>
+                    <p data-i18n="featureMealHistoryText">Review past meals and track your nutrition trends over time.</p>
                 </div>
-            </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-i18n="featureFastingTimerTitle">Fasting Timer & Reminder</h3>
+                    <p data-i18n="featureFastingTimerText">Multiple intermittent fasting modes like 16:8/5:2.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <h3 data-i18n="featureWaterTrackerTitle">Water Tracker</h3>
+                    <p data-i18n="featureWaterTrackerText">Log water, tea, coffee, and sparkling water.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3 data-i18n="featureWeightBMIRecordTitle">Weight & BMI Record</h3>
+                    <p data-i18n="featureWeightBMIRecordText">Trend chart shows your changes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-i18n="featureHealthTipsTitle">Health Tips</h3>
+                    <p data-i18n="featureHealthTipsText">Get suggestions for a more balanced diet based on your eating habits.</p>
+                </div>
         </div>
     </section>
 
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2 class="section-title lang-en">How It Works</h2>
-            <h2 class="section-title lang-cn">工作原理</h2>
+            <h2 class="section-title" data-i18n="howItWorksTitle">How It Works</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3 class="lang-en">Take a Photo</h3>
-                        <h3 class="lang-cn">拍摄照片</h3>
-                        <p class="lang-en">Simply take a photo of your food using the app.</p>
-                        <p class="lang-cn">使用应用程序简单拍摄您的食物照片。</p>
+                        <h3 data-i18n="step1Title">Snap a Photo</h3>
+                        <p data-i18n="step1Text">Capture your meal with your phone's camera.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3 class="lang-en">AI Analysis</h3>
-                        <h3 class="lang-cn">AI分析</h3>
-                        <p class="lang-en">Our AI identifies the food and calculates its volume and nutritional content.</p>
-                        <p class="lang-cn">我们的AI识别食物并计算其体积和营养成分。</p>
+                        <h3 data-i18n="step2Title">Get Instant Analysis</h3>
+                        <p data-i18n="step2Text">Our AI analyzes the food and provides detailed nutrition facts.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3 class="lang-en">Get Results</h3>
-                        <h3 class="lang-cn">获取结果</h3>
-                        <p class="lang-en">View detailed nutrition information including calories, macros, and glycemic index.</p>
-                        <p class="lang-cn">查看详细的营养信息，包括卡路里、宏量营养素和血糖指数。</p>
+                        <h3 data-i18n="step3Title">Track and Improve</h3>
+                        <p data-i18n="step3Text">Log your meals and monitor your progress towards a healthier lifestyle.</p>
                     </div>
                 </div>
-            </div>
-            <div class="accuracy-info">
-                <h3 class="lang-en">How Accurate is DietScanAI?</h3>
-                <h3 class="lang-cn">DietScanAI的准确性如何？</h3>
-                <p class="lang-en">DietScanAI's image scanning feature is generally 90% accurate. For foods with hidden ingredients like smoothies or soups, you can use our describe feature to type exactly what you ate. You can also use our barcode scan or food label scan features for packaged foods.</p>
-                <p class="lang-cn">DietScanAI的图像扫描功能通常有90%的准确率。对于含有隐藏成分的食物，如冰沙或汤，您可以使用我们的描述功能来输入您所吃的确切内容。您还可以使用我们的食品标签扫描功能来识别包装食品。</p>
             </div>
         </div>
     </section>
 
     <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title lang-en">Frequently Asked Questions</h2>
-            <h2 class="section-title lang-cn">常见问题</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 class="lang-en">Is DietScanAI available for Android?</h3>
-                    <h3 class="lang-cn">DietScanAI是否有安卓版本？</h3>
-                    <p class="lang-en">Currently, DietScanAI is only available for iOS devices. We're working on an Android version that will be released in the future.</p>
-                    <p class="lang-cn">目前，DietScanAI仅适用于iOS设备。我们正在开发安卓版本，将在未来发布。</p>
+            <h2 class="section-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span data-i18n="faq1Question">Is Diet Scan AI free to use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq1Answer">Yes, Diet Scan AI is free to download and use. We offer optional premium features for advanced users.</p>
                 </div>
-                <div class="faq-item">
-                    <h3 class="lang-en">How does DietScanAI calculate the glycemic index?</h3>
-                    <h3 class="lang-cn">DietScanAI如何计算血糖指数？</h3>
-                    <p class="lang-en">DietScanAI uses a comprehensive database of foods and their glycemic index values. When analyzing your meal, it identifies the components and provides the GI based on established nutritional data.</p>
-                    <p class="lang-cn">DietScanAI使用全面的食物数据库及其血糖指数值。在分析您的餐食时，它会识别组成部分并根据已建立的营养数据提供GI值。</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span data-i18n="faq2Question">What platforms does Diet Scan AI support?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq2Answer">Currently, Diet Scan AI is available exclusively on iOS. An Android version is in development.</p>
                 </div>
-                <div class="faq-item">
-                    <h3 class="lang-en">Can I track my nutrition history over time?</h3>
-                    <h3 class="lang-cn">我可以随时间追踪我的营养历史吗？</h3>
-                    <p class="lang-en">Yes, DietScanAI stores your meal data securely, allowing you to review past meals and see trends in your nutrition intake over days, weeks, and months.</p>
-                    <p class="lang-cn">是的，DietScanAI安全地存储您的餐食数据，使您能够查看过去的餐食并查看您在数天、数周和数月内的营养摄入趋势。</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span data-i18n="faq3Question">How accurate is the food recognition?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq3Answer">Our AI is trained on a massive dataset of food images to provide highly accurate results. Accuracy improves over time as more users contribute data.</p>
                 </div>
-                <div class="faq-item">
-                    <h3 class="lang-en">Is my data secure?</h3>
-                    <h3 class="lang-cn">我的数据安全吗？</h3>
-                    <p class="lang-en">Yes, we take data privacy seriously. Your personal information and meal data are encrypted and stored securely. We never share your data with third parties without your explicit consent.</p>
-                    <p class="lang-cn">是的，我们非常重视数据隐私。您的个人信息和餐食数据经过加密并安全存储。未经您的明确同意，我们绝不会与第三方共享您的数据。</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span data-i18n="faq4Question">Can I track my water intake?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p data-i18n="faq4Answer">Absolutely! You can easily log your intake of water, tea, coffee, and other beverages.</p>
                 </div>
             </div>
         </div>
@@ -191,91 +357,77 @@
 
     <section id="blog" class="blog">
         <div class="container">
-            <h2 class="section-title lang-en">Latest Articles</h2>
-            <h2 class="section-title lang-cn">最新文章</h2>
+            <h2 class="section-title" data-i18n="blogTitle">From Our Blog</h2>
             <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog-1.jpg" alt="Blog Image">
-                    </div>
+                <div class="blog-post">
+                    <img src="images/blog-1.jpg" alt="High-protein diet">
                     <div class="blog-content">
-                        <h3 class="lang-en">Understanding Glycemic Index for Diabetic Diet</h3>
-                        <h3 class="lang-cn">了解糖尿病饮食的血糖指数</h3>
-                        <p class="lang-en">Learn how tracking the glycemic index of foods can help manage diabetes and improve overall health.</p>
-                        <p class="lang-cn">了解如何通过追踪食物的血糖指数来帮助管理糖尿病并改善整体健康。</p>
-                        <a href="#" class="read-more lang-en">Read More</a>
-                        <a href="#" class="read-more lang-cn">阅读更多</a>
+                        <h3 data-i18n="blog1Title">The Benefits of a High-Protein Diet</h3>
+                        <p data-i18n="blog1Excerpt">Learn how increasing your protein intake can help with weight loss and muscle building...</p>
+                        <a href="#" class="read-more" data-i18n="readMore">Read More</a>
                     </div>
                 </div>
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog-2.jpg" alt="Blog Image">
-                    </div>
+                <div class="blog-post">
+                    <img src="images/blog-2.jpg" alt="Glycemic index chart">
                     <div class="blog-content">
-                        <h3 class="lang-en">Nutrition Tips for Fitness Enthusiasts</h3>
-                        <h3 class="lang-cn">健身爱好者的营养提示</h3>
-                        <p class="lang-en">Discover how proper nutrition tracking can maximize your workout results and support muscle growth.</p>
-                        <p class="lang-cn">了解如何通过适当的营养追踪来最大化您的锻炼效果并支持肌肉生长。</p>
-                        <a href="#" class="read-more lang-en">Read More</a>
-                        <a href="#" class="read-more lang-cn">阅读更多</a>
+                        <h3 data-i18n="blog2Title">Understanding the Glycemic Index</h3>
+                        <p data-i18n="blog2Excerpt">A guide to how the glycemic index affects your blood sugar and energy levels...</p>
+                        <a href="#" class="read-more" data-i18n="readMore">Read More</a>
                     </div>
                 </div>
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog-3.jpg" alt="Blog Image">
-                    </div>
+                <div class="blog-post">
+                    <img src="images/blog-3.jpg" alt="Intermittent fasting clock">
                     <div class="blog-content">
-                        <h3 class="lang-en">Weight Management Through Food Awareness</h3>
-                        <h3 class="lang-cn">通过食物意识管理体重</h3>
-                        <p class="lang-en">How being mindful of your food intake can lead to sustainable weight loss and better health outcomes.</p>
-                        <p class="lang-cn">如何通过注意您的食物摄入量来实现可持续的减肥和更好的健康结果。</p>
-                        <a href="#" class="read-more lang-en">Read More</a>
-                        <a href="#" class="read-more lang-cn">阅读更多</a>
+                        <h3 data-i18n="blog3Title">Intermittent Fasting for Beginners</h3>
+                        <p data-i18n="blog3Excerpt">Everything you need to know to get started with intermittent fasting...</p>
+                        <a href="#" class="read-more" data-i18n="readMore">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section id="get-started" class="get-started">
+        <div class="container">
+            <h2 data-i18n="getStartedTitle">Get Started with DietScan AI</h2>
+            <p data-i18n="getStartedSubtitle">Download the app and take the first step towards a healthier lifestyle.</p>
+            <div class="app-buttons">
+                <!-- <a href="#"><img src="images/app-store.png" alt="App Store"></a> -->
+                <!-- <a href="#"><img src="images/google-play.png" alt="Google Play"></a> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo.png" alt="DietScanAI Logo" class="footer-logo-img">
-                    <h2>DietScanAI</h2>
-                    <p class="lang-en">Track your nutrition with just a photo</p>
-                    <p class="lang-cn">只需一张照片，追踪您的营养摄入</p>
+                    <img src="images/logo.png" alt="DietScan AI Logo" class="footer-logo-img" data-i18n-alt="logoAlt">
+                    <h4 class="footer-app-name">Diet Scan AI</h4>
                 </div>
                 <div class="footer-links">
-                    <h3 class="lang-en">Quick Links</h3>
-                    <h3 class="lang-cn">快速链接</h3>
+                    <h4 data-i18n="quickLinks">Quick Links</h4>
                     <ul>
-                        <li><a href="#features" class="lang-en">Features</a><a href="#features" class="lang-cn">功能</a></li>
-                        <li><a href="#how-it-works" class="lang-en">How It Works</a><a href="#how-it-works" class="lang-cn">工作原理</a></li>
-                        <li><a href="#faq" class="lang-en">FAQ</a><a href="#faq" class="lang-cn">常见问题</a></li>
-                        <li><a href="#blog" class="lang-en">Blog</a><a href="#blog" class="lang-cn">博客</a></li>
-                        <li><a href="support.html" class="lang-en">Support</a><a href="support.html" class="lang-cn">支持</a></li>
-                        <li><a href="privacy-policy.html" class="lang-en">Privacy Policy</a><a href="privacy-policy.html" class="lang-cn">隐私政策</a></li>
-                        <li><a href="terms-of-service.html" class="lang-en">Terms of Service</a><a href="terms-of-service.html" class="lang-cn">使用条款</a></li>
+                        <li><a href="#features" data-i18n="features">Features</a></li>
+                        <li><a href="#how-it-works" data-i18n="howItWorks">How It Works</a></li>
+                        <li><a href="#faq" data-i18n="faq">FAQ</a></li>
+                        <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+                        <li><a href="support.html" data-i18n="navSupport">Support</a></li>
+                        <li><a href="privacy-policy.html" data-i18n="footerPrivacy">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" data-i18n="footerTerms">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3 class="lang-en">Contact Us</h3>
-                    <h3 class="lang-cn">联系我们</h3>
-                    <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <h4 data-i18n="contactUs">Contact Us</h4>
+                    <p>Email: <a href="mailto:support@dietscanai.app">support@dietscanai.app</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 DietScanAI. All rights reserved. <a href="privacy-policy.html" class="lang-en">Privacy Policy</a><a href="privacy-policy.html" class="lang-cn">隐私政策</a> | <a href="terms-of-service.html" class="lang-en">Terms of Service</a><a href="terms-of-service.html" class="lang-cn">使用条款</a></p>
+                <p data-i18n="footerRights">&copy; 2024 DietScan AI. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Scan AI ブログ - AI栄養追跡技術の洞察</title>
+    <meta name="description" content="AI駆動の栄養追跡、食品認識におけるコンピュータビジョン技術、スマートヘルステクノロジーの最新洞察と研究成果を探索します。">
+    <meta name="keywords" content="AI栄養追跡, 食品認識, コンピュータビジョン, 機械学習, ヘルステクノロジー, 栄養分析">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .blog-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .blog-excerpt {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        .category-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        .ai-tag { background: #9b59b6; }
+        .tech-tag { background: #3498db; }
+        .health-tag { background: #2ecc71; }
+        .research-tag { background: #e67e22; }
+        .featured {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .featured .blog-image {
+            height: 300px;
+        }
+        .featured .blog-content {
+            padding: 40px;
+        }
+        @media (max-width: 768px) {
+            .featured {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diet Scan AI ブログ</h1>
+            <p class="subtitle">AI駆動の栄養・健康技術の洞察</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="blog-grid">
+            <!-- 特集記事 -->
+            <article class="blog-card featured">
+                <div class="blog-image">🤖</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">AI技術</span>
+                    <h2 class="blog-title">コンピュータビジョンが食品認識を革命的に変える方法</h2>
+                    <div class="blog-meta">公開日：2025年9月 | 8分で読める</div>
+                    <p class="blog-excerpt">
+                        Diet Scan AIが先進的なコンピュータビジョンアルゴリズムを使用して95%以上の精度で食品を識別する方法を発見してください。深層学習モデル、トレーニングデータセット、そして即座の栄養分析を可能にする実世界のアプリケーションについて学びます。
+                    </p>
+                    <a href="#" class="read-more">全文を読む →</a>
+                </div>
+            </article>
+
+            <!-- 通常記事 -->
+            <article class="blog-card">
+                <div class="blog-image">📊</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">技術</span>
+                    <h3 class="blog-title">AI栄養追跡の背後にある科学</h3>
+                    <div class="blog-meta">2025年9月 | 5分で読める</div>
+                    <p class="blog-excerpt">
+                        シンプルな食品写真から正確なカロリー計算とマクロ分析を実現する機械学習アルゴリズムを探索します。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🌍</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">グローバルヘルス</span>
+                    <h3 class="blog-title">多言語栄養：言語の壁を打ち破る</h3>
+                    <div class="blog-meta">2025年9月 | 6分で読める</div>
+                    <p class="blog-excerpt">
+                        Diet Scan AIが5つの言語をサポートし、アジア料理から西洋の食事まで、世界中で栄養追跡をアクセシブルにする方法。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🩺</div>
+                <div class="blog-content">
+                    <span class="category-tag health-tag">健康研究</span>
+                    <h3 class="blog-title">AIによる血糖指数モニタリング</h3>
+                    <div class="blog-meta">2025年9月 | 7分で読める</div>
+                    <p class="blog-excerpt">
+                        AI駆動の血糖指数追跡が糖尿病患者や健康志向の個人が血糖値を効果的に管理するのにどのように役立つかを学びます。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🔬</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">研究</span>
+                    <h3 class="blog-title">グローバル食品データベースでのAI訓練</h3>
+                    <div class="blog-meta">2025年9月 | 9分で読める</div>
+                    <p class="blog-excerpt">
+                        舞台裏：多様な料理から100,000以上の食品アイテムでAIモデルを訓練し、汎用的な食品認識を実現した方法。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">📱</div>
+                <div class="blog-content">
+                    <span class="category-tag tech-tag">モバイルAI</span>
+                    <h3 class="blog-title">栄養アプリにおけるエッジコンピューティング</h3>
+                    <div class="blog-meta">2025年9月 | 4分で読める</div>
+                    <p class="blog-excerpt">
+                        Diet Scan AIがプライバシー、速度、オフライン機能のためにデバイス上で食品分析をローカル処理する理由。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🎯</div>
+                <div class="blog-content">
+                    <span class="category-tag ai-tag">パーソナライゼーション</span>
+                    <h3 class="blog-title">機械学習によるパーソナライズド栄養</h3>
+                    <div class="blog-meta">2025年9月 | 6分で読める</div>
+                    <p class="blog-excerpt">
+                        AIがあなたの食事パターンから学習し、パーソナライズされた健康洞察と栄養推奨を提供する方法。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🚀</div>
+                <div class="blog-content">
+                    <span class="category-tag research-tag">未来技術</span>
+                    <h3 class="blog-title">予防医療におけるAIの未来</h3>
+                    <div class="blog-meta">2025年9月 | 8分で読める</div>
+                    <p class="blog-excerpt">
+                        AI栄養追跡が予測的健康分析と予防ケアソリューションに向けてどのように進化しているかを探索します。
+                    </p>
+                    <a href="#" class="read-more">続きを読む →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Diet Scan AI ブログ",
+        "description": "AI駆動の栄養追跡、食品分析におけるコンピュータビジョン、スマートヘルス技術の洞察",
+        "url": "https://dietscannai.app/blog-ja.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Diet Scan AI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://dietscannai.app/images/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "コンピュータビジョンが食品認識を革命的に変える方法",
+                "description": "Diet Scan AIが先進的なコンピュータビジョンアルゴリズムを使用して95%以上の精度で食品を識別する方法を発見",
+                "datePublished": "2025-09-01",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Diet Scan AI 研究チーム"
+                },
+                "keywords": "コンピュータビジョン, 食品認識, AI, 機械学習, 栄養追跡"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>

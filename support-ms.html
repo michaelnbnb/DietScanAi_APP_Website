@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokongan - Diet Scan AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="48x48 64x64 96x96 128x128 256x256">
+    <style>
+      /* 强制 favicon 显示为圆角矩形 */
+      link[rel~="icon"] {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      /* Gaya khusus halaman sokongan */
+      .support-section {
+        padding: 80px 0;
+      }
+
+      .support-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .support-card {
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .support-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .support-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+
+      .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-method i {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        width: 30px;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+      }
+
+      .faq-item:last-child {
+        border-bottom: none;
+      }
+
+      .faq-question {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+
+      .faq-answer {
+        color: var(--dark-gray);
+      }
+
+      .policy-links {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: var(--light-gray);
+        border-radius: 10px;
+      }
+
+      .policy-links p {
+        margin-bottom: 10px;
+      }
+
+      .policy-links a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Diet Scan AI Logo" class="logo-img"></a>
+                    <h1>Diet Scan AI</h1>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#features">Ciri-ciri</a></li>
+                        <li><a href="index.html#how-it-works">Bagaimana Ia Berfungsi</a></li>
+                        <li><a href="index.html#faq">Soalan Lazim</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="support.html">Sokongan</a></li>
+                        <li class="language-switch">
+                            <div class="language-dropdown">
+                                <button class="language-btn" id="language-btn">
+                                    <span>Bahasa Melayu</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <a href="support.html">English</a>
+                                    <a href="support-cn.html">中文</a>
+                                    <a href="support-zh-TW.html">繁體中文</a>
+                                    <a href="support-ms.html">Bahasa Melayu</a>
+                                    <a href="support-ja.html">日本語</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <section class="support-section">
+        <div class="container">
+            <h2 class="section-title">Sokongan</h2>
+            
+            <div class="support-container">
+                <div class="support-card">
+                    <h3>Hubungi Kami</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <p>support@dietscanai.app</p>
+                        </div>
+                        <p>Pasukan sokongan kami tersedia dari Isnin hingga Jumaat, 9:00 pagi hingga 6:00 petang (GMT+8). Kami biasanya membalas pertanyaan dalam masa 24 jam.</p>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <h3>Soalan Lazim</h3>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Sejauh manakah ketepatan pengecaman makanan Diet Scan AI?</p>
+                        <p class="faq-answer">Diet Scan AI menggunakan teknologi AI canggih untuk mengenal pasti makanan dengan ketepatan yang tinggi. Sistem kami boleh mengenali beribu-ribu item makanan dan hidangan biasa. Untuk hasil terbaik, ambil gambar yang jelas dalam pencahayaan yang baik dan letakkan makanan di tengah bingkai.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Bolehkah saya menjejaki pengambilan nutrisi harian saya dari semasa ke semasa?</p>
+                        <p class="faq-answer">Ya! Diet Scan AI menyimpan sejarah makanan anda, membolehkan anda melihat trend nutrisi harian, mingguan dan bulanan. Anda boleh menjejaki kalori, makronutrien (protein, karbohidrat, lemak), dan indeks glisemik dari semasa ke semasa untuk membantu mencapai matlamat kesihatan anda.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Adakah data saya selamat dan peribadi?</p>
+                        <p class="faq-answer">Sudah tentu. Kami mengambil privasi data dengan sangat serius. Gambar makanan dan data nutrisi anda disimpan dengan selamat dan tidak pernah dikongsi dengan pihak ketiga tanpa kebenaran anda. Untuk butiran lanjut, sila semak Dasar Privasi kami.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Bagaimana saya boleh mendapatkan hasil yang paling tepat?</p>
+                        <p class="faq-answer">Untuk hasil terbaik: 1) Ambil gambar dalam pencahayaan yang baik, 2) Letakkan makanan dengan jelas dalam bingkai, 3) Cuba asingkan item makanan yang berbeza jika boleh, dan 4) Ambil gambar dari atas untuk hidangan rata dan dari sudut 45 darjah untuk hidangan yang mempunyai ketinggian.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Bolehkah saya menambah atau mengedit item makanan secara manual?</p>
+                        <p class="faq-answer">Ya, Diet Scan AI membolehkan anda menambah item makanan secara manual atau mengedit hasil pengecaman AI. Ini berguna untuk resipi tersuai, makanan yang jarang ditemui, atau apabila anda ingin melaraskan saiz hidangan.</p>
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <h3>Penyelesaian Masalah</h3>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Aplikasi tidak mengecam makanan saya dengan betul</p>
+                        <p class="faq-answer">Cuba ambil gambar dalam pencahayaan yang lebih baik, pastikan makanan kelihatan dengan jelas, dan cuba sudut yang berbeza. Anda juga boleh mengedit hasil pengecaman secara manual jika perlu.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <p class="faq-question">Aplikasi ranap apabila saya cuba mengambil gambar</p>
+                        <p class="faq-answer">Sila pastikan iOS anda dikemas kini kepada versi terkini. Juga, semak sama ada anda telah memberikan kebenaran kamera kepada aplikasi. Jika masalah berterusan, cuba mulakan semula peranti anda atau pasang semula aplikasi.</p>
+                    </div>
+                </div>
+                
+                <div class="policy-links">
+                    <p>Dasar Privasi</p>
+                    <p>Privasi anda penting bagi kami. Untuk memahami cara kami mengendalikan data anda, sila semak <a href="http://dietscanai.app/privacy-policy.html">Dasar Privasi</a> kami.</p>
+                    
+                    <p>Syarat Perkhidmatan</p>
+                    <p>Dengan menggunakan Diet Scan AI, anda bersetuju dengan <a href="http://dietscanai.app/terms-of-service.html">Syarat Perkhidmatan</a> kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Diet Scan AI Logo" class="footer-logo-img">
+                    <h2>Diet Scan AI</h2>
+                    <p>Jejaki Pemakanan Anda Dengan Hanya Satu Gambar</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Pautan Pantas</h3>
+                    <ul>
+                        <li><a href="index.html#features">Ciri-ciri</a></li>
+                        <li><a href="index.html#how-it-works">Bagaimana Ia Berfungsi</a></li>
+                        <li><a href="index.html#faq">Soalan Lazim</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="support.html">Sokongan</a></li>
+                        <li><a href="privacy-policy.html">Dasar Privasi</a></li>
+                        <li><a href="terms-of-service.html">Syarat Perkhidmatan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fas fa-envelope"></i> support@dietscanai.app</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Diet Scan AI. Hak Cipta Terpelihara. <a href="privacy-policy.html">Dasar Privasi</a> | <a href="terms-of-service.html">Syarat Perkhidmatan</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
